@@ -5,4 +5,70 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
+}
+
+.postalCard {
+    background-color: white;
+    width: 600px;
+    height: 90vh;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: 50px;
+    color: #A5836E;
+}
+
+.postalCard__frame {
+    position: relative;
+    height: calc(100% - 40px);
+    padding: 15px;
+}
+
+.postalCard__content {
+    border: 5px solid #A5836E;
+    height: 100%;
+    text-align: center;
+}
+
+
+.postalCard__content__one {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.postalCard__content__two {
+    font-size: 6em;
+    margin-top: calc(100% / 6);
+}
+
+.postalCard__content__three {
+    font-size: 2em;
+    margin-top: calc(100% / 6);
+}
+
+.postalCard__content__four {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.postalCard__content__five {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.postalCard__content__six {
+    font-size: 3em;
+    margin-top: calc(100% / 6);
+}
+
+.postalCard__content__seven {
+    font-size: 2em;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 }
