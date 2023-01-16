@@ -35,33 +35,34 @@
 
 
 .postalCard__content__one {
-    font-size: 3em;
+    font-size: 4vh;
     font-weight: bold;
     margin-top: 20px;
     font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__two {
-    font-size: 5.5em;
-    margin-top: calc(100% / 6);
+    font-size: 6.5vh;
+    margin-top: calc(60vh / 6);
     font-family: 'WindSong', cursive;
+    width: 98%;
 }
 
 .postalCard__content__three {
-    font-size: 2em;
+    font-size: 3vh;
     margin-top: calc(100% / 6);
     font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__four {
-    font-size: 2em;
+    font-size: 3vh;
     font-weight: bold;
     margin-top: 20px;
     font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__five {
-    font-size: 2em;
+    font-size: 3vh;
     margin-top: 20px;
     font-family: 'Cinzel', serif;
 }
@@ -73,7 +74,7 @@
 }
 
 .postalCard__content__seven {
-    font-size: 2em;
+    font-size: 2.5vh;
     position: absolute;
     bottom: 15px;
     width: calc(100% - 39px);
@@ -107,4 +108,69 @@
     font-family: 'Cinzel', serif;
 
     margin-bottom: 30px;
+}
+
+@media screen and (max-height: 1000px) {
+    .postalCard {
+        height: 80vh;
+    }
+
+    .postalCard__content__one {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__two {
+        font-size: 7vh;
+        margin-top: calc(50vh / 6);
+    }
+
+    .postalCard__content__three {
+        font-size: 3vh;
+        margin-top: calc(40vh / 6);
+    }
+
+    .postalCard__content__four {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__five {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__six {
+        margin-top: calc(100% / 6);
+    }
+
+    .postalCard__content__seven {
+        font-size: 3vh;
+        bottom: 10px;
+    }
+
+    .countdown__time {
+        font-size: 2em;
+    }
+
+    .countdown__wrapper div {
+        padding-left: 10px;
+    }
+
+    .countdown__divider {
+        font-size: 2em;
+    }
+
+    .postalCard {
+      background-color: white;
+      width: 600px;
+      height: 90vh;
+  
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      margin-left: 50px;
+      color: #A5836E;
+  }
 }
