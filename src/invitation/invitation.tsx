@@ -4,7 +4,7 @@ import background from "./invitation-background.jpg";
 
 import Countdown from "./countdown";
 
-const Invitation = (props) => {
+const Invitation = () => {
 	return (
 		<>
 			<div className="fullPageBackground" style={{ backgroundImage: `url(${background})` }} />
