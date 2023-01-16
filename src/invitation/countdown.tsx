@@ -18,7 +18,6 @@ const Countdown = () => {
     const minutes: number = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds: number = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Bug: Object is possibly 'null'
     document.getElementById("countdown__days__number")!.innerHTML = days.toString();
     document.getElementById("countdown__hours__number")!.innerHTML = hours.toString().padStart(2, "0");
     document.getElementById("countdown__minutes__number")!.innerHTML = minutes.toString().padStart(2, "0");
