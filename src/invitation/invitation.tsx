@@ -8,6 +8,10 @@ const Invitation = () => {
 	return (
 		<>
 			<div className="fullPageBackground" style={{ backgroundImage: `url(${background})` }} />
+      {/* Create a div with a picture */}
+      <div className="invitation__picture" >
+        <img src={background} alt="invitation" />
+      </div>
 			<div className="postalCard">
 				<div className="postalCard__frame">
 					<div className="postalCard__content">
