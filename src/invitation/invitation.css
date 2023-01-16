@@ -92,3 +92,19 @@
     font-weight: bold;
     font-family: 'Cinzel', serif;
 }
+
+.countdown__wrapper div {
+    padding-left: 15px;
+}
+
+.countdown__wrapper div:first-child {
+    padding-left: 0;
+}
+
+.countdown__divider {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 30px;
+}

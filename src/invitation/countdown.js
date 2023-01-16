@@ -19,16 +19,15 @@ const Countdown = (props) => {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Update the divs with the id countdown__days__number, countdown__hours__number, countdown__minutes__number, countdown__seconds__number with the correct values
-    document.getElementById("countdown__days__number").innerHTML = days +  " : ";
-    document.getElementById("countdown__hours__number").innerHTML = hours + " : ";
-    document.getElementById("countdown__minutes__number").innerHTML = minutes + " : ";
+    document.getElementById("countdown__days__number").innerHTML = days;
+    document.getElementById("countdown__hours__number").innerHTML = hours;
+    document.getElementById("countdown__minutes__number").innerHTML = minutes;
     document.getElementById("countdown__seconds__number").innerHTML = seconds;
 
   }, 1000);
 
   return (
     <>
-      <div id="demo"></div>
       {/* Create 4 divs, one for days, hours, minute, seconds. The divs should be located beside each other */}
       <div className="countdown__wrapper">
         {/* Display in the format as 365 : 24 : 43 : 48 and under the text "Days, Hours, Minutes, Seconds */}
@@ -36,14 +35,17 @@ const Countdown = (props) => {
           <div id="countdown__days__number" className="countdown__time" />
           <span>Days</span>
         </div>
+        <div className="countdown__divider"> : </div>
         <div className="countdown__hours">
           <div id="countdown__hours__number" className="countdown__time" />
           <span>Hours</span>
         </div>
+        <div className="countdown__divider"> : </div>
         <div className="countdown__minutes">
           <div id="countdown__minutes__number" className="countdown__time" />
           <span>Minutes</span>
         </div>
+        <div className="countdown__divider"> : </div>
         <div className="countdown__seconds">
           <div id="countdown__seconds__number" className="countdown__time" />
           <span>Seconds</span>
