@@ -1,7 +1,8 @@
 import React from "react";
 import "./invitation.css";
-
 import background from "./invitation-background.jpg";
+
+import Countdown from "./countdown";
 
 const Invitation = (props) => {
 	return (
@@ -26,8 +27,7 @@ const Invitation = (props) => {
 							<span>Stockholm, Sweden</span>
 						</div>
 						<div className="postalCard__content__six">
-							{/* <Countdown /> */}
-							<span>365 : 24 : 43 : 48</span>
+							<Countdown />
 						</div>
 						<div className="postalCard__content__seven">
 							<span>Formal Invitation to follow</span>
