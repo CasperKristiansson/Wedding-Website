@@ -38,37 +38,57 @@
     font-size: 3em;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__two {
-    font-size: 6em;
+    font-size: 5.5em;
     margin-top: calc(100% / 6);
+    font-family: 'WindSong', cursive;
 }
 
 .postalCard__content__three {
     font-size: 2em;
     margin-top: calc(100% / 6);
+    font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__four {
     font-size: 2em;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__five {
     font-size: 2em;
     margin-top: 20px;
+    font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__six {
-    font-size: 3em;
+    font-weight: bold;
     margin-top: calc(100% / 6);
+    font-family: 'Cinzel', serif;
 }
 
 .postalCard__content__seven {
     font-size: 2em;
     position: absolute;
     bottom: 15px;
-    width: 100%;
+    width: calc(100% - 39px);
+    font-family: 'Cinzel', serif;
+}
+
+.countdown__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.countdown__time {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
 }
