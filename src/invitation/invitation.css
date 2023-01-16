@@ -110,6 +110,10 @@
     margin-bottom: 30px;
 }
 
+.invitation__picture {
+    display: none;
+}
+
 @media screen and (max-height: 1000px) {
     .postalCard {
         height: 80vh;
@@ -173,4 +177,19 @@
       margin-left: 50px;
       color: #A5836E;
   }
+}
+
+@media screen and (max-width: 1024px) {
+    .fullPageBackground {
+        display: none;
+    }
+
+    .invitation__picture {
+        display: block;
+    }
+
+    .invitation__picture img {
+        width: 100%;
+        height: auto;
+    }
 }
