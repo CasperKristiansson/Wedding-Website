@@ -1,0 +1,281 @@
+.fullPageBackground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.postalCard {
+    background-color: white;
+    width: 600px;
+    height: 90vh;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: 50px;
+    color: #A5836E;
+}
+
+.postalCard__frame {
+    position: relative;
+    height: calc(100% - 40px);
+    padding: 15px;
+}
+
+.postalCard__content {
+    border: 5px solid #A5836E;
+    height: 100%;
+    text-align: center;
+}
+
+.postalCard__content__one {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.postalCard__content__two {
+    font-size: 6.5vh;
+    margin-top: calc(60vh / 6);
+    font-family: 'WindSong', cursive;
+    width: 98%;
+}
+
+.postalCard__content__three {
+    font-size: 3vh;
+    margin-top: calc(100% / 6);
+    font-family: 'Cinzel', serif;
+}
+
+.postalCard__content__four {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.postalCard__content__five {
+    font-size: 3vh;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.postalCard__content__six {
+    font-weight: bold;
+    margin-top: calc(100% / 6);
+    font-family: 'Cinzel', serif;
+}
+
+.postalCard__content__seven {
+    font-size: 2.5vh;
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 39px);
+    font-family: 'Cinzel', serif;
+}
+
+.countdown__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.countdown__time {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.countdown__wrapper div {
+    padding-left: 15px;
+}
+
+.countdown__wrapper div:first-child {
+    padding-left: 0;
+}
+
+.countdown__divider {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+
+    margin-bottom: 30px;
+}
+
+.invitation__picture {
+    display: none;
+}
+
+@media screen and (max-height: 1000px) {
+    .postalCard {
+        height: 80vh;
+    }
+
+    .postalCard__content__one {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__two {
+        font-size: 7vh;
+        margin-top: calc(50vh / 6);
+    }
+
+    .postalCard__content__three {
+        font-size: 3vh;
+        margin-top: calc(40vh / 6);
+    }
+
+    .postalCard__content__four {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__five {
+        font-size: 3vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__six {
+        margin-top: calc(100% / 6);
+    }
+
+    .postalCard__content__seven {
+        font-size: 3vh;
+        bottom: 10px;
+    }
+
+    .countdown__time {
+        font-size: 2em;
+    }
+
+    .countdown__wrapper div {
+        padding-left: 10px;
+    }
+
+    .countdown__divider {
+        font-size: 2em;
+    }
+
+    .postalCard {
+      background-color: white;
+      width: 600px;
+      height: 90vh;
+  
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      margin-left: 50px;
+      color: #A5836E;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .fullPageBackground {
+        display: none;
+    }
+
+    .invitation__picture {
+        display: block;
+    }
+
+    .invitation__picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .postalCard {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .postalCard__frame {
+        padding: 2px;
+    }
+
+    .postalCard__content__one {
+      font-size: 5vh;
+      margin-top: 10px;
+    }
+
+    .postalCard__content__two {
+        font-size: 10vh;
+        margin-top: calc(50vh / 6);
+    }
+
+    .postalCard__content__three {
+        font-size: 4vh;
+        margin-top: calc(40vh / 6);
+    }
+
+    .postalCard__content__four {
+        font-size: 4vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__five {
+        font-size: 4vh;
+        margin-top: 10px;
+    }
+
+    .postalCard__content__six {
+        font-size: 2.5vh;
+        margin-top: calc(40vh / 6);
+    }
+
+    .postalCard__content__seven {
+        font-size: 4vh;
+        position: relative;
+        margin-top: 25px;
+
+        bottom: 0;
+        width: 100%;
+    }
+
+    .countdown__time {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /* set all the fonts based on the width */
+    .postalCard__content__one {
+        font-size: 6vw;
+    }
+
+    .postalCard__content__two {
+        font-size: 12vw;
+    }
+
+    .postalCard__content__three {
+        font-size: 5vw;
+    }
+
+    .postalCard__content__four {
+        font-size: 5vw;
+    }
+
+    .postalCard__content__five {
+        font-size: 5vw;
+    }
+
+    .postalCard__content__six {
+        font-size: 3vw;
+    }
+
+    .postalCard__content__seven {
+        font-size: 5vw;
+    }
+}
