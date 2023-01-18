@@ -9,31 +9,31 @@ const Invitation = () => {
 		<>
 			<div className="fullPageBackground" style={{ backgroundImage: `url(${background})` }} />
       {/* Create a div with a picture */}
-      <div className="invitation__picture" >
+      <div className="invitation-picture" >
         <img src={background} alt="invitation" />
       </div>
 			<div className="postalCard">
-				<div className="postalCard__frame">
-					<div className="postalCard__content">
-						<div className="postalCard__content__one">
+				<div className="postalCard-frame">
+					<div className="postalCard-content">
+						<div className="postalCard-content-one">
 							<span>Save the date</span>
 						</div>
-						<div className="postalCard__content__two">
+						<div className="postalCard-content-two">
 							<span>Fanny & Nathaniel</span>
 						</div>
-						<div className="postalCard__content__three">
+						<div className="postalCard-content-three">
 							<span>Are getting married</span>
 						</div>
-						<div className="postalCard__content__four">
+						<div className="postalCard-content-four">
 							<span>June.29.2024</span>
 						</div>
-						<div className="postalCard__content__five">
+						<div className="postalCard-content-five">
 							<span>Stockholm, Sweden</span>
 						</div>
-						<div className="postalCard__content__six">
+						<div className="postalCard-content-six">
 							<Countdown />
 						</div>
-						<div className="postalCard__content__seven">
+						<div className="postalCard-content-seven">
 							<span>Formal Invitation to follow</span>
 						</div>
 					</div>

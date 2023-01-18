@@ -18,35 +18,35 @@ const Countdown = () => {
     const minutes: number = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds: number = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown__days__number")!.innerHTML = days.toString();
-    document.getElementById("countdown__hours__number")!.innerHTML = hours.toString().padStart(2, "0");
-    document.getElementById("countdown__minutes__number")!.innerHTML = minutes.toString().padStart(2, "0");
-    document.getElementById("countdown__seconds__number")!.innerHTML = seconds.toString().padStart(2, "0");
+    document.getElementById("countdown-days-number")!.innerHTML = days.toString();
+    document.getElementById("countdown-hours-number")!.innerHTML = hours.toString().padStart(2, "0");
+    document.getElementById("countdown-minutes-number")!.innerHTML = minutes.toString().padStart(2, "0");
+    document.getElementById("countdown-seconds-number")!.innerHTML = seconds.toString().padStart(2, "0");
 
   }, 1000);
 
   return (
     <>
       {/* Create 4 divs, one for days, hours, minute, seconds. The divs should be located beside each other */}
-      <div className="countdown__wrapper">
+      <div className="countdown-wrapper">
         {/* Display in the format as 365 : 24 : 43 : 48 and under the text "Days, Hours, Minutes, Seconds */}
-        <div className="countdown__days">
-          <div id="countdown__days__number" className="countdown__time" />
+        <div className="countdown-days">
+          <div id="countdown-days-number" className="countdown-time" />
           <span>Days</span>
         </div>
-        <div className="countdown__divider"> : </div>
-        <div className="countdown__hours">
-          <div id="countdown__hours__number" className="countdown__time" />
+        <div className="countdown-divider"> : </div>
+        <div className="countdown-hours">
+          <div id="countdown-hours-number" className="countdown-time" />
           <span>Hours</span>
         </div>
-        <div className="countdown__divider"> : </div>
-        <div className="countdown__minutes">
-          <div id="countdown__minutes__number" className="countdown__time" />
+        <div className="countdown-divider"> : </div>
+        <div className="countdown-minutes">
+          <div id="countdown-minutes-number" className="countdown-time" />
           <span>Minutes</span>
         </div>
-        <div className="countdown__divider"> : </div>
-        <div className="countdown__seconds">
-          <div id="countdown__seconds__number" className="countdown__time" />
+        <div className="countdown-divider"> : </div>
+        <div className="countdown-seconds">
+          <div id="countdown-seconds-number" className="countdown-time" />
           <span>Seconds</span>
         </div>
       </div>
