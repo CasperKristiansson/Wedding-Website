@@ -18,7 +18,8 @@
     transform: translateY(-50%);
 
     margin-left: 50px;
-    color: #A5836E;
+    color: white;
+    background-color: #A5836E;;
 }
 
 .postalCard-frame {
@@ -28,7 +29,7 @@
 }
 
 .postalCard-content {
-    border: 5px solid #A5836E;
+    border: 5px solid #F3BF67;
     height: 100%;
     text-align: center;
 }
