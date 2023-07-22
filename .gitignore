@@ -29,3 +29,4 @@ serverless/login/credentials.env
 *venv*
 AWS.env
 serverless/credentials.env
+*vendor*
