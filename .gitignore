@@ -24,3 +24,8 @@ yarn-error.log*
 
 .vscode
 serverless/login/credentials.env
+
+*.serverless
+*venv*
+AWS.env
+serverless/credentials.env
