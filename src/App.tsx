@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Invitation from './invitation/invitation';
+import Invitation from './Pages/invitation/invitation';
 
 function App() {
   return (
