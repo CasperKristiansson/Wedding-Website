@@ -1,0 +1,31 @@
+service: wedding-website
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  stage: main
+  environment:
+    COGNITO_POOL_ID: us-east-1_MipSlwYY9
+    ACCOUNT_ID: 525429412730
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+functions:
+  login:
+    handler: login/login.handler
+    description: Login function
+    memorySize: 128
+    events:
+      - http:
+          path: login
+          method: post
+          cors: true
+    package:
+      include:
+        - login/**
