@@ -6,9 +6,8 @@ provider:
   name: aws
   runtime: python3.9
   region: us-east-1
-  stage: main
+  stage: prod
   environment:
-    COGNITO_POOL_ID: us-east-1_MipSlwYY9
     ACCOUNT_ID: 525429412730
 
 package:
