@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
-import Invitation from './Pages/invitation/invitation';
+import LoginPage from './Pages/Login/Login';
 
 function App() {
+  const [login, setLogin] = React.useState(false);
+
+  useEffect(() => {
+    const loginStatus = localStorage.getItem('login');
+    if (loginStatus) {
+      setLogin(true);
+    }
+  }, []);
+
+
   return (
     <div className="App">
-      <Invitation />
+      {!login && (
+        <LoginPage setLogin={(login: boolean) => setLogin(login)} />
+      )}
+      {login && <h1>Logged in!</h1>}
     </div>
   );
 }
