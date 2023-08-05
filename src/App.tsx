@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 
 import LoginPage from './Pages/Login/Login';
+import { Navigation } from './Pages/Navigation/Navigation';
 
 function App() {
   const [login, setLogin] = React.useState(false);
@@ -19,7 +20,11 @@ function App() {
       {!login && (
         <LoginPage setLogin={(login: boolean) => setLogin(login)} />
       )}
-      {login && <h1>Logged in!</h1>}
+      {login && (
+        <>
+          <Navigation />
+        </>
+      )}
     </div>
   );
 }
