@@ -1,1 +1,0 @@
-export const ENDPOINT_URL = "https://b2de93rzde.execute-api.us-east-1.amazonaws.com/main";

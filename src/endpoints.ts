@@ -1,0 +1,1 @@
+export const ENDPOINT_URL_LOGIN = "https://aedo8afhjj.execute-api.us-east-1.amazonaws.com/prod/login";
