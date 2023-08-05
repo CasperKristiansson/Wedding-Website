@@ -1,4 +1,6 @@
+import contextlib
 import os
+import json
 from login.vendor.dotenv import load_dotenv
 
 load_dotenv("/var/task/credentials.env")
@@ -8,15 +10,26 @@ USERNAME = os.getenv("USERNAME")
 
 
 def handler(event, context):
-    if event["body"]["password"] == PASSWORD and event["body"]["username"] == USERNAME:
+    print(json.dumps(event))
+    print("Ps", PASSWORD, USERNAME)
+
+    event = json.loads(event["body"])
+    print("As", event["password"], event["username"])
+    if event["password"] == PASSWORD and event["username"] == USERNAME:
         return {
             "statusCode": 200,
             "body": "Login successful!",
-            "success": True
+            "success": True,
+            "headers": {
+                "Access-Control-Allow-Origin" : "*",
+            },
         }
-    else:
-        return {
-            "statusCode": 401,
-            "body": "Login failed!",
-            "success": False
-        }
+
+    return {
+        "statusCode": 401,
+        "body": "Login failed!",
+        "success": False,
+        "headers": {
+            "Access-Control-Allow-Origin" : "*",
+        },
+    }
