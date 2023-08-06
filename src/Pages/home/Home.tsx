@@ -2,7 +2,9 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import startImage from "../../assets/Wedding Images/Start Page.jpg"
 import ourStoryImage from "../../assets/Wedding Images/07. 02. 2023-215.jpg"
-import flowersOne from "../../assets/External/3.png"
+import flowersThree from "../../assets/External/3.png"
+import flowersOne from "../../assets/External/1.png";
+import flowersTwo from "../../assets/External/2.png";
 
 
 const Home: React.FC = () => {
@@ -59,7 +61,6 @@ const Home: React.FC = () => {
       zIndex: 3,
       paddingTop: '100px',
 			fontFamily: "WindSong, cursive",
-
     },
     columnsContainer: {
       display: 'flex',
@@ -84,6 +85,49 @@ const Home: React.FC = () => {
     columnImage: {
       width: '100%',
     },
+    containerLocation: {
+      height: 400,
+      marginTop: 350,
+      backgroundColor: '#C1C69D',
+      position: 'relative',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      lineHeight: 0.7,
+    },
+    leftImage: {
+      position: 'absolute',
+      top: 123,
+      left: 0,
+      transform: 'rotate(-90deg)',
+      width: 400,
+      marginLeft: -125,
+    },
+    rightImage: {
+      position: 'absolute',
+      top: 81,
+      right: 0,
+      transform: 'rotate(-90deg)',
+      width: 400,
+      marginRight: -81,
+    },
+    headingLocation: {
+      textAlign: 'center',
+      fontSize: '64px',
+      fontWeight: 'bold',
+      zIndex: 3,
+			fontFamily: "WindSong, cursive",
+      color: "white",
+      textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+      marginTop: -150,
+    },
+    subheadingLocation: {
+      fontSize: '35px',
+      color: '#fff',
+      textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+      fontFamily: "'Cinzel', serif",
+    },
   });
 
   const classes = useStyles();
@@ -104,7 +148,7 @@ const Home: React.FC = () => {
     <div className={classes.container}>
       <img
         className={classes.backgroundImage}
-        src={flowersOne}
+        src={flowersThree}
         alt="Background"
       />
       <div className={classes.title}>Our Story</div>
@@ -137,6 +181,14 @@ const Home: React.FC = () => {
       </div>
     </div>
   </div>
+  <div className={classes.containerLocation}>
+      <img src={flowersOne} alt="Left" className={classes.leftImage} />
+      <img src={flowersTwo} alt="Right" className={classes.rightImage} />
+      <div>
+        <h1 className={classes.headingLocation}>Location</h1>
+        <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
+      </div>
+    </div>
   </>
   );
 };
