@@ -8,7 +8,7 @@ const useStyles = createUseStyles({
 			alignItems: 'center',
 			justifyContent: 'space-between',
 			padding: '5px 1rem',
-			width: "calc(100vw - 2rem)",
+			width: "calc(100vw - 3.5rem)",
 			backgroundColor: "white",
 			height: "70px",
       boxShadow: "0 2px 2px -2px gray",

@@ -1,6 +1,9 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import startImage from "../../assets/Wedding Images/Start Page.jpg"
+import ourStoryImage from "../../assets/Wedding Images/07. 02. 2023-215.jpg"
+import flowersOne from "../../assets/External/3.png"
+
 
 const Home: React.FC = () => {
   const useStyles = createUseStyles({
@@ -38,11 +41,55 @@ const Home: React.FC = () => {
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
       fontFamily: "'Cinzel', serif",
     },
+    containerStory: {
+      position: 'relative',
+      width: '100%',
+    },
+    backgroundImage: {
+      width: '600px',
+      zIndex: 1,
+      position: 'absolute',
+      left: 0,
+      marginTop: -300,
+    },
+    title: {
+      textAlign: 'center',
+      fontSize: '64px',
+      fontWeight: 'bold',
+      zIndex: 3,
+      paddingTop: '100px',
+			fontFamily: "WindSong, cursive",
+
+    },
+    columnsContainer: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginTop: '30px',
+      padding: '0 30px',
+      zIndex: 3,
+    },
+    leftColumn: {
+      flex: 1,
+      marginRight: '10px',
+    },
+    rightColumn: {
+      flex: 1,
+      marginLeft: '10px',
+    },
+    loremText: {
+      fontSize: '26px',
+      padding: "0 40px",
+    },
+    columnImage: {
+      width: '100%',
+    },
   });
 
   const classes = useStyles();
 
   return (
+    <>
     <div className={classes.container}>
       <img
         src={startImage}
@@ -54,6 +101,43 @@ const Home: React.FC = () => {
         <p className={classes.subheading}>June 29th, 2024</p>
       </div>
     </div>
+    <div className={classes.container}>
+      <img
+        className={classes.backgroundImage}
+        src={flowersOne}
+        alt="Background"
+      />
+      <div className={classes.title}>Our Story</div>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumn}>
+          <p className={classes.loremText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
+            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
+            nunc euismod.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
+            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
+            nunc euismod.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
+            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
+            nunc euismod.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
+            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
+            nunc euismod.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
+            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
+            nunc euismod.
+          </p>
+        </div>
+      <div className={classes.rightColumn}>
+        <img
+          className={classes.columnImage}
+          src={ourStoryImage}
+          alt="Right Column"
+        />
+      </div>
+    </div>
+  </div>
+  </>
   );
 };
 
