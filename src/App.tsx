@@ -3,26 +3,34 @@ import './App.css';
 
 import LoginPage from './Pages/Login/Login';
 import { Navigation } from './Pages/Navigation/Navigation';
+import { Route, Routes } from 'react-router-dom';
+import Invitation from './Pages/invitation/invitation';
 
 function App() {
   const [login, setLogin] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
     const loginStatus = localStorage.getItem('login');
     if (loginStatus) {
       setLogin(true);
     }
+    setLoading(false);
   }, []);
 
 
   return (
     <div className="App">
-      {!login && (
+      {!login && !loading && (
         <LoginPage setLogin={(login: boolean) => setLogin(login)} />
       )}
       {login && (
         <>
-          <Navigation />
+          {window.location.pathname !== '/invitation' && <Navigation />}
+          <Routes>
+            <Route path="/" element={<div>Home</div>} />
+            <Route path="/invitation" element={<Invitation />} />
+          </Routes>
         </>
       )}
     </div>
