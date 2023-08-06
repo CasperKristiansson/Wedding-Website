@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { createUseStyles } from 'react-jss';
-import {NavLink, useNavigate} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const useStyles = createUseStyles({
 		navbar: {
@@ -9,33 +9,26 @@ const useStyles = createUseStyles({
 			justifyContent: 'space-between',
 			padding: '5px 1rem',
 			width: "calc(100vw - 2rem)",
-			backgroundColor: "black",
-			height: "60px",
+			backgroundColor: "white",
+			height: "70px",
+      boxShadow: "0 2px 2px -2px gray",
 		},
 		logo: {
 			display: 'flex',
 			alignItems: 'center',
-			color: '#333',
 			textDecoration: 'none',
 			width: "500px",
-			'&:hover': {
-				color: '#000',
-			},
 			'& span': {
-				color:"white",
-				fontSize: '2.5rem',
+				color:"black",
+				fontSize: '3rem',
 				marginTop: 6,
 				marginLeft: 15,
-				fontFamily: "'Poppins', sans-serif",
+				fontFamily: "WindSong, cursive",
 				"@media (max-width: 1150px)": {
 					fontSize: '2rem',
 					marginLeft: 10,
 				},
 			},
-		},
-		logoIcon: {
-			marginRight: '0.5rem',
-			fontSize: '1.5rem',
 		},
 		navLinks: {
 			display: 'flex',
@@ -43,36 +36,16 @@ const useStyles = createUseStyles({
 			justifyContent: 'flex-end',
 			gap: '1.2rem',
 		},
-		profileButton: {
-			display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',
-			padding: 0,
-			minWidth: 'auto',
-			backgroundColor: 'transparent',
-			border: 'none',
-			cursor: 'pointer',
-		},
-		profileAvatar: {
-			width: '2rem',
-			height: '2rem',
-			marginRight: '0.5rem',
-		},
-		logoImage: {
-			height: 35,
-			"@media (max-width: 1150px)": {
-				height: 25,
-			},
-		},
     navLink: {
-			color: "white",
+			color: "black",
 			textDecoration: 'none',
 			'&:hover': {
-				color: '#75BC5B',
+        color: "#85ad52",
 			},
 			'&.active': {
-				color: '#75BC5B',
+        color: "#85ad52",
 			},
+      fontSize: "1.2rem",
 		},
 });
 

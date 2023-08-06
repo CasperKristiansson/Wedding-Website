@@ -5,6 +5,7 @@ import LoginPage from './Pages/Login/Login';
 import { Navigation } from './Pages/Navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
 import Invitation from './Pages/invitation/invitation';
+import Home from './Pages/home/Home';
 
 function App() {
   const [login, setLogin] = React.useState(false);
@@ -18,7 +19,6 @@ function App() {
     setLoading(false);
   }, []);
 
-
   return (
     <div className="App">
       {!login && !loading && (
@@ -28,7 +28,7 @@ function App() {
         <>
           {window.location.pathname !== '/invitation' && <Navigation />}
           <Routes>
-            <Route path="/" element={<div>Home</div>} />
+            <Route path="/" element={<Home />} />
             <Route path="/invitation" element={<Invitation />} />
           </Routes>
         </>
