@@ -5,6 +5,7 @@ import ourStoryImage from "../../assets/Wedding Images/07. 02. 2023-215.jpg"
 import flowersThree from "../../assets/External/3.png"
 import flowersOne from "../../assets/External/1.png";
 import flowersTwo from "../../assets/External/2.png";
+import stockholm from "../../assets/External/stockholm.png";
 
 
 const Home: React.FC = () => {
@@ -90,7 +91,6 @@ const Home: React.FC = () => {
       backgroundColor: '#C1C69D',
       position: 'relative',
       display: 'flex',
-      alignItems: 'center',
       justifyContent: 'center',
       textAlign: 'center',
       lineHeight: 0.7,
@@ -131,6 +131,16 @@ const Home: React.FC = () => {
     },
     containerOurStory: {
       padding: '75px 0',
+    },
+    containerStockholm: {
+      position: 'relative',
+    },
+    imageStockholm: {
+      position: 'absolute',
+      width: "40%",
+      left: "50%",
+      transform: "translateX(-50%)",
+      marginTop: -200,
     },
   });
 
@@ -188,13 +198,20 @@ const Home: React.FC = () => {
     </div>
   </div>
   <div className={classes.containerLocation}>
-      <img src={flowersOne} alt="Left" className={classes.leftImage} />
-      <img src={flowersTwo} alt="Right" className={classes.rightImage} />
-      <div>
-        <h1 className={classes.headingLocation}>Location</h1>
-        <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
-      </div>
+    <img src={flowersOne} alt="Left" className={classes.leftImage} />
+    <img src={flowersTwo} alt="Right" className={classes.rightImage} />
+    <div>
+      <h1 className={classes.headingLocation}>Location</h1>
+      <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
     </div>
+  </div>
+  <div className={classes.containerStockholm}>
+    <img
+      src={stockholm}
+      alt="Stockholm"
+      className={classes.imageStockholm}
+    />
+  </div>
   </>
   );
 };
