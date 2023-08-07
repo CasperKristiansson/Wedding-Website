@@ -59,7 +59,6 @@ const Home: React.FC = () => {
       fontSize: '64px',
       fontWeight: 'bold',
       zIndex: 3,
-      paddingTop: '100px',
 			fontFamily: "WindSong, cursive",
     },
     columnsContainer: {
@@ -87,7 +86,7 @@ const Home: React.FC = () => {
     },
     containerLocation: {
       height: 400,
-      marginTop: 350,
+      marginTop: 0,
       backgroundColor: '#C1C69D',
       position: 'relative',
       display: 'flex',
@@ -120,13 +119,18 @@ const Home: React.FC = () => {
 			fontFamily: "WindSong, cursive",
       color: "white",
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-      marginTop: -150,
     },
     subheadingLocation: {
       fontSize: '35px',
       color: '#fff',
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
       fontFamily: "'Cinzel', serif",
+    },
+    flowerContainer: {
+      position: 'relative',
+    },
+    containerOurStory: {
+      padding: '75px 0',
     },
   });
 
@@ -145,12 +149,14 @@ const Home: React.FC = () => {
         <p className={classes.subheading}>June 29th, 2024</p>
       </div>
     </div>
-    <div className={classes.container}>
+    <div className={classes.flowerContainer}>
       <img
         className={classes.backgroundImage}
         src={flowersThree}
         alt="Background"
-      />
+        />
+    </div>
+    <div className={classes.containerOurStory}>
       <div className={classes.title}>Our Story</div>
       <div className={classes.columnsContainer}>
         <div className={classes.leftColumn}>
@@ -169,7 +175,7 @@ const Home: React.FC = () => {
             nunc euismod.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
             tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod.
+            nunc euismod. 
           </p>
         </div>
       <div className={classes.rightColumn}>
