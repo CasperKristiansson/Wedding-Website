@@ -6,7 +6,7 @@ import flowersThree from "../../assets/External/3.png"
 import flowersOne from "../../assets/External/1.png";
 import flowersTwo from "../../assets/External/2.png";
 import stockholm from "../../assets/External/stockholm.png";
-
+import flower from "../../assets/External/flower.png";
 
 const Home: React.FC = () => {
   const useStyles = createUseStyles({
@@ -134,13 +134,53 @@ const Home: React.FC = () => {
     },
     containerStockholm: {
       position: 'relative',
+      height: 200,
     },
     imageStockholm: {
       position: 'absolute',
-      width: "40%",
+      height: 400,
       left: "50%",
       transform: "translateX(-50%)",
       marginTop: -200,
+    },
+    homeContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+      padding: '20px',
+    },
+    titleAbout: {
+      fontSize: '24px',
+      fontWeight: 'bold',
+      marginBottom: '20px',
+    },
+    columnsContainerAbout: {
+      display: 'flex',
+      width: '60%',
+      margin: '0 auto',
+    },
+    column: {
+      flex: '1',
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    middleColumn: {
+      flex: '0.5',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    imageAbout: {
+      maxWidth: '100%',
+      maxHeight: '100%',
+    },
+    whereTitle: {
+      fontSize: '20px',
+      fontWeight: 'bold',
+      marginTop: '20px',
+    },
+    address: {
+      fontSize: '18px',
     },
   });
 
@@ -211,6 +251,28 @@ const Home: React.FC = () => {
       alt="Stockholm"
       className={classes.imageStockholm}
     />
+  </div>
+  <div className={classes.homeContainer}>
+    <div className={classes.title}>The Wedding Day</div>
+    <div className={classes.columnsContainerAbout}>
+      <div className={classes.column}>
+        <div className={classes.whereTitle}>When</div>
+        <div className={classes.address}>Sunday, Sep 23 2024</div>
+        <div className={classes.address}>Wedding Ceremony 10am</div>
+        <div className={classes.address}>Wedding Reception 12am</div>
+      </div>
+      <div className={`${classes.column} ${classes.middleColumn}`}>
+        <img
+          className={classes.imageAbout}
+          src={flower}
+          alt="Flower"
+        />
+      </div>
+      <div className={classes.column}>
+        <div className={classes.whereTitle}>Where</div>
+        <div className={classes.address}>Your Address in Sweden</div>
+      </div>
+    </div>
   </div>
   </>
   );
