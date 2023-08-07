@@ -6,6 +6,7 @@ import { Navigation } from './Pages/Navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
 import Invitation from './Pages/invitation/invitation';
 import Home from './Pages/home/Home';
+import Gifts from './Pages/Gifts/Home';
 
 function App() {
   const [login, setLogin] = React.useState(false);
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/invitation" element={<Invitation />} />
+            <Route path="/gifts" element={<Gifts />} />
           </Routes>
         </>
       )}
