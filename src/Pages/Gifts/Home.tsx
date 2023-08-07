@@ -43,7 +43,7 @@ const Gifts: React.FC = () => {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '100px 5%',
+      padding: '100px 5% 10px 5%',
     },
     leftColumn: {
       flex: 1,
@@ -74,6 +74,19 @@ const Gifts: React.FC = () => {
     },
     listItem: {
       marginBottom: '10px',
+    },
+    containerTitle: {
+      background: '#C1C69D',
+      height: '150px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      fontSize: '42px',
+      fontWeight: 'bold',
+      zIndex: 3,
+			fontFamily: "'Cinzel', serif",
+      color: 'white',
     },
   });
 
@@ -119,6 +132,9 @@ const Gifts: React.FC = () => {
           </ol>
         </div>
       </div>
+    </div>
+    <div className={classes.containerTitle}>
+      Reserve & pay for a Gift
     </div>
     </>
   );
