@@ -3,8 +3,8 @@ import { createUseStyles } from 'react-jss';
 import startImage from "../../assets/Wedding Images/07. 02. 2023-57.jpg"
 import startImageTwo from "../../assets/Wedding Images/07. 02. 2023-58.jpg"
 import utils from "../../assets/External/1_side.png"
-import utils2 from "../../assets/External/3.png"
-
+import { Gallery } from "react-grid-gallery";
+import { images } from "./Images";
 
 const useStyles = createUseStyles({
   title: {
@@ -79,6 +79,9 @@ const useStyles = createUseStyles({
     transform: 'scaleX(-1)',
     right: 0,
   },
+  galleryContainer: {
+    padding: '50px 5% 50px 5%',
+  },
 });
 
 const OurStory: React.FC = () => {
@@ -127,6 +130,14 @@ const OurStory: React.FC = () => {
           className={classes.imageDescription}
         />
       </div>
+    </div>
+    <div className={classes.galleryContainer}>
+      <Gallery
+        images={images}
+        enableImageSelection={false}
+        rowHeight={300}
+        maxRows={2}
+      />
     </div>
     </>
   );
