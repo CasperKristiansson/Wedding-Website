@@ -1,0 +1,32 @@
+service: wedding-website
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  stage: prod
+  environment:
+    ACCOUNT_ID: 525429412730
+
+package:
+  individually: true
+  exclude:
+    - ./**
+  include:
+    - credentials.env
+
+functions:
+  login:
+    handler: login/login.handler
+    description: Login function
+    memorySize: 128
+    events:
+      - http:
+          path: login
+          method: post
+          cors: true
+    package:
+      include:
+        - login/**
