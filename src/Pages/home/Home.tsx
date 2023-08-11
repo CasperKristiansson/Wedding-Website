@@ -1,12 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import startImage from "../../assets/Wedding Images/Start Page.jpg"
-import ourStoryImage from "../../assets/Wedding Images/07. 02. 2023-215.jpg"
-import flowersThree from "../../assets/External/3.png"
-import flowersOne from "../../assets/External/1.png";
-import flowersTwo from "../../assets/External/2.png";
-import stockholm from "../../assets/External/stockholm.png";
-import flower from "../../assets/External/flower.png";
 
 const Home: React.FC = () => {
   const useStyles = createUseStyles({
@@ -190,7 +183,7 @@ const Home: React.FC = () => {
     <>
     <div className={classes.container}>
       <img
-        src={startImage}
+        src={process.env.PUBLIC_URL + "assets/Wedding Images/Start Page.jpg"}
         alt="Wedding"
         className={classes.image}
       />
@@ -202,7 +195,7 @@ const Home: React.FC = () => {
     <div className={classes.flowerContainer}>
       <img
         className={classes.backgroundImage}
-        src={flowersThree}
+        src={process.env.PUBLIC_URL + "assets/External/3.png"}
         alt="Background"
         />
     </div>
@@ -231,15 +224,15 @@ const Home: React.FC = () => {
       <div className={classes.rightColumn}>
         <img
           className={classes.columnImage}
-          src={ourStoryImage}
+          src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-215.jpg"}
           alt="Right Column"
         />
       </div>
     </div>
   </div>
   <div className={classes.containerLocation}>
-    <img src={flowersOne} alt="Left" className={classes.leftImage} />
-    <img src={flowersTwo} alt="Right" className={classes.rightImage} />
+    <img src={process.env.PUBLIC_URL + "assets/External/1.png"} alt="Left" className={classes.leftImage} />
+    <img src={process.env.PUBLIC_URL + "assets/External/2.png"} alt="Right" className={classes.rightImage} />
     <div>
       <h1 className={classes.headingLocation}>Location</h1>
       <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
@@ -247,7 +240,7 @@ const Home: React.FC = () => {
   </div>
   <div className={classes.containerStockholm}>
     <img
-      src={stockholm}
+      src={process.env.PUBLIC_URL + "assets/External/stockholm.png"}
       alt="Stockholm"
       className={classes.imageStockholm}
     />
@@ -264,7 +257,7 @@ const Home: React.FC = () => {
       <div className={`${classes.column} ${classes.middleColumn}`}>
         <img
           className={classes.imageAbout}
-          src={flower}
+          src={process.env.PUBLIC_URL + "assets/External/flower.png"}
           alt="Flower"
         />
       </div>

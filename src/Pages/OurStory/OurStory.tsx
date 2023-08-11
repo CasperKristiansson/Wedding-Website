@@ -1,8 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import startImage from "../../assets/Wedding Images/07. 02. 2023-57.jpg"
-import startImageTwo from "../../assets/Wedding Images/07. 02. 2023-58.jpg"
-import utils from "../../assets/External/1_side.png"
 import { Gallery } from "react-grid-gallery";
 import { images } from "./Images";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -101,12 +98,12 @@ const OurStory: React.FC = () => {
     <>
     <div className={classes.container}>
       <img
-        src={utils}
+        src={process.env.PUBLIC_URL + "/assets/External/1_side.png"}
         alt="Wedding"
         className={classes.image}
       />
       <img
-        src={utils}
+        src={process.env.PUBLIC_URL + "/assets/External/1_side.png"}
         alt="Wedding"
         className={classes.imageReverse}
       />
@@ -115,7 +112,7 @@ const OurStory: React.FC = () => {
         
         <div className={classes.leftColumn}>
           <img
-            src={startImage}
+            src={process.env.PUBLIC_URL + "/assets/Wedding Images/07. 02. 2023-57.jpg"}
             alt="How It Works"
             className={classes.imageDescription}
           />
@@ -135,7 +132,7 @@ const OurStory: React.FC = () => {
       </div>
       <div className={classes.rightColumn}>
         <img
-          src={startImageTwo}
+          src={process.env.PUBLIC_URL + "/assets/Wedding Images/07. 02. 2023-57.jpg"}
           alt="How It Works"
           className={classes.imageDescription}
         />
