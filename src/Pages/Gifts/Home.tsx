@@ -1,7 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import startImage from "../../assets/Wedding Images/Gifts.jpg"
-import giftImage from "../../assets/External/Example Gift.png"
 
 const Gifts: React.FC = () => {
   const useStyles = createUseStyles({
@@ -96,7 +94,7 @@ const Gifts: React.FC = () => {
     <>
     <div className={classes.container}>
       <img
-        src={startImage}
+        src={process.env.PUBLIC_URL + 'assets/Wedding Images/Gifts.jpg'}
         alt="Wedding"
         className={classes.image}
       />
@@ -108,7 +106,7 @@ const Gifts: React.FC = () => {
       <div className={classes.leftColumn}>
       <div className={classes.title}>How it Works</div>
         <img
-          src={giftImage}
+          src={process.env.PUBLIC_URL + 'assets/External/Example Gift.png'}
           alt="How It Works"
           className={classes.imageDescription}
         />

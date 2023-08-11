@@ -1,6 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import startImage from "../../assets/Wedding Images/Gifts.jpg"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Icon } from '../OurStory/OurStory';
 import danceImage from "../../assets/Icons/dance.png"
@@ -71,7 +70,7 @@ const WeddingDay: React.FC = () => {
     <>
     <div className={classes.container}>
       <img
-        src={startImage}
+        src={process.env.PUBLIC_URL + "assets/Wedding Images/Gifts.jpg"}
         alt="Wedding"
         className={classes.image}
       />

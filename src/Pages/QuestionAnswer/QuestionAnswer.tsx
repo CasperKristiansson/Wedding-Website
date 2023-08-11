@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import startImage from "../../assets/Wedding Images/Gifts.jpg"
 
 // Example data for questions and answers
 const faqData = [
@@ -80,7 +79,7 @@ const FAQ: React.FC<{}> = () => {
     <>
     <div className={classes.container}>
       <img
-        src={startImage}
+        src={process.env.PUBLIC_URL + "assets/Wedding Images/Gifts.jpg"}
         alt="Wedding"
         className={classes.image}
       />
