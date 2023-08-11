@@ -9,6 +9,7 @@ import Home from './Pages/home/Home';
 import Gifts from './Pages/Gifts/Home';
 import OurStory from './Pages/OurStory/OurStory';
 import WeddingDay from './Pages/WeddingDay/WeddingDay';
+import FAQ from './Pages/QuestionAnswer/QuestionAnswer';
 
 function App() {
   const [login, setLogin] = React.useState(false);
@@ -36,6 +37,7 @@ function App() {
             <Route path="/gifts" element={<Gifts />} />
             <Route path="/our-story" element={<OurStory />} />
             <Route path="/wedding-day" element={<WeddingDay />} />
+            <Route path="/qa" element={<FAQ />} />
             <Route path="*" element={<h1 style={{textAlign: "center"}}>404 Not Found </h1>} />
           </Routes>
         </>
