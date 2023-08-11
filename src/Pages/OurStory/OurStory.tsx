@@ -8,6 +8,8 @@ import { images } from "./Images";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import danceImage from "../../assets/Icons/dance.png"
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 const useStyles = createUseStyles({
@@ -85,6 +87,10 @@ const useStyles = createUseStyles({
   },
   galleryContainer: {
     padding: '50px 5% 50px 5%',
+  },
+  imageGallery: {
+    width: '75%',
+    margin: 'auto',
   },
 });
 
@@ -195,6 +201,14 @@ const OurStory: React.FC = () => {
         enableImageSelection={false}
         rowHeight={300}
         maxRows={2}
+      />
+    </div>
+    <div className={classes.imageGallery}>
+      <ImageGallery
+        items={images.map((image) => ({
+          original: image.src,
+          thumbnail: image.src,
+        }))}
       />
     </div>
     </>
