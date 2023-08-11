@@ -215,7 +215,7 @@ const OurStory: React.FC = () => {
   );
 };
 
-function Icon(source: string | undefined) {
+export function Icon(source: string | undefined) {
   return <img
     src={source}
     alt="icon"
