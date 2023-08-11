@@ -5,6 +5,12 @@ import startImageTwo from "../../assets/Wedding Images/07. 02. 2023-58.jpg"
 import utils from "../../assets/External/1_side.png"
 import { Gallery } from "react-grid-gallery";
 import { images } from "./Images";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import danceImage from "../../assets/Icons/dance.png"
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 
 const useStyles = createUseStyles({
   title: {
@@ -82,6 +88,10 @@ const useStyles = createUseStyles({
   galleryContainer: {
     padding: '50px 5% 50px 5%',
   },
+  imageGallery: {
+    width: '75%',
+    margin: 'auto',
+  },
 });
 
 const OurStory: React.FC = () => {
@@ -139,8 +149,87 @@ const OurStory: React.FC = () => {
         maxRows={2}
       />
     </div>
+    <VerticalTimeline
+      lineColor='#C1C69D'
+    >
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
+        date="2011 - present"
+        contentStyle={{ background: '#C1C69D', color: '#fff' }}
+        iconStyle={{ background: '#C1C69D' }}
+        icon={Icon(danceImage)}
+      >
+        <h3 className="vertical-timeline-element-title">Creative Director</h3>
+        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <p>
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
+        date="2011 - present"
+        contentStyle={{ background: '#C1C69D', color: '#fff' }}
+        iconStyle={{ background: '#C1C69D' }}
+        icon={Icon(danceImage)}
+      >
+        <h3 className="vertical-timeline-element-title">Creative Director</h3>
+        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <p>
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
+        date="2011 - present"
+        contentStyle={{ background: '#C1C69D', color: '#fff' }}
+        iconStyle={{ background: '#C1C69D' }}
+        icon={Icon(danceImage)}
+      >
+        <h3 className="vertical-timeline-element-title">Creative Director</h3>
+        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <p>
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+        </p>
+      </VerticalTimelineElement>
+    </VerticalTimeline>
+    <div className={classes.galleryContainer}>
+      <Gallery
+        images={images}
+        enableImageSelection={false}
+        rowHeight={300}
+        maxRows={2}
+      />
+    </div>
+    <div className={classes.imageGallery}>
+      <ImageGallery
+        items={images.map((image) => ({
+          original: image.src,
+          thumbnail: image.src,
+        }))}
+      />
+    </div>
     </>
   );
 };
+
+export function Icon(source: string | undefined) {
+  return <img
+    src={source}
+    alt="icon"
+    style={{
+      width: "75%",
+      height: "75%",
+      objectFit: "cover",
+      objectPosition: "center",
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    }}
+  />;
+}
 
 export default OurStory;
