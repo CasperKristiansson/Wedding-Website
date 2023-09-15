@@ -30,7 +30,13 @@ const Home: React.FC = () => {
       fontWeight: 'bold',
       color: '#fff',
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      fontFamily: "'Cinzel', serif"
+      fontFamily: "'Cinzel', serif",
+      '@media (max-width: 800px)': {
+        fontSize: '40px',
+      },
+      '@media (max-width: 560px)': {
+        fontSize: '22px',
+      },
     },
     subheading: {
       fontSize: '35px',
@@ -43,11 +49,16 @@ const Home: React.FC = () => {
       width: '100%',
     },
     backgroundImage: {
-      width: '600px',
+      width: '500px',
       zIndex: 1,
       position: 'absolute',
       left: 0,
       marginTop: -300,
+      '@media (max-width: 1300px)': {
+        left: '50%',
+        transform: 'translateX(-50%)',
+        marginTop: -420,
+      },
     },
     title: {
       textAlign: 'center',
@@ -58,32 +69,54 @@ const Home: React.FC = () => {
     },
     columnsContainer: {
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       alignItems: 'center',
       marginTop: '30px',
       padding: '0 30px',
-      zIndex: 3,
+      '@media (max-width: 1199px)': {
+        flexDirection: 'column',
+      }
     },
     leftColumn: {
       flex: 1,
       marginRight: '10px',
+      '@media (max-width: 1199px)': {
+        marginRight: 0,
+        marginTop: '20px',  // Adjust this to your preference
+        textAlign: 'center',
+      },
+
     },
     rightColumn: {
       flex: 1,
       marginLeft: '10px',
       display: 'flex',
       justifyContent: 'center',
-
+      '@media (max-width: 1199px)': {
+        marginLeft: 0,
+        marginBottom: '20px',  // Adjust this to your preference
+        padding: "0px",  // Adjust padding as necessary
+      }
     },
     loremText: {
       fontSize: '26px',
       padding: "0 40px",
+      '@media (max-width: 1199px)': {
+        padding: "0 20px",  // Adjust padding as necessary
+      },
+      '@media (max-width: 700px)': {
+        fontSize: '18px',
+        padding: "0px",  // Adjust padding as necessary
+      }
     },
     columnImage: {
       width: '700px',
       marginLeft: 'auto',
       marginRight: 'auto',
       zIndex: 3,
+      '@media (max-width: 1199px)': {
+        maxWidth: '100%',  // Adjust the image size as needed
+      }
     },
     containerLocation: {
       height: 400,
@@ -134,7 +167,8 @@ const Home: React.FC = () => {
     },
     containerStockholm: {
       position: 'relative',
-      height: 200,
+      height: 400,
+      marginBottom: -100,
     },
     imageStockholm: {
       position: 'absolute',
@@ -142,6 +176,8 @@ const Home: React.FC = () => {
       left: "50%",
       transform: "translateX(-50%)",
       marginTop: -200,
+      maxHeight: '100%',
+      width: 'auto',
     },
     homeContainer: {
       display: 'flex',
@@ -160,16 +196,28 @@ const Home: React.FC = () => {
       display: 'flex',
       width: '60%',
       margin: '0 auto',
+      '@media (max-width: 999px)': {
+        width: '100%',
+      },
+      '@media (max-width: 449px)': {
+        flexDirection: 'column',
+      },
     },
     column: {
       flex: '1',
       display: 'flex',
       flexDirection: 'column',
+      '@media (max-width: 449px)': {
+        marginBottom: '20px',
+      },
     },
     middleColumn: {
       flex: '0.5',
       justifyContent: 'center',
       alignItems: 'center',
+      '@media (max-width: 999px)': {
+        flex: '1',
+      },
     },
     imageAbout: {
       maxWidth: '100%',
@@ -232,106 +280,112 @@ const Home: React.FC = () => {
       display: 'flex',
       justifyContent: 'center',
       marginTop: '2rem',
+      '@media (max-width: 1199px)': {
+        marginBottom: '20px',  // Adjust this to your preference
+      }
     },
+    zIndex: {
+      zIndex: 3,
+    }
   });
 
   const classes = useStyles();
 
   return (
-    <>
-    <div className={classes.container}>
-      <img
-        src={process.env.PUBLIC_URL + "assets/Wedding Images/Start Page2.png"}
-        alt="Wedding"
-        className={classes.image}
-      />
-      <div className={classes.textContainer}>
-        <h2 className={classes.heading}>WE ARE GETTING MARRIED</h2>
-        <p className={classes.subheading}>June 29th, 2024</p>
-      </div>
-    </div>
-    <div className={classes.flowerContainer}>
-      <img
-        className={classes.backgroundImage}
-        src={process.env.PUBLIC_URL + "assets/External/3.png"}
-        alt="Background"
+    <div style={{overflow: "hidden"}}>
+      <div className={classes.container}>
+        <img
+          src={process.env.PUBLIC_URL + "assets/Wedding Images/Start Page2.png"}
+          alt="Wedding"
+          className={classes.image}
         />
-    </div>
-    <div className={classes.rsvpContainer}>
-      <h2 className={classes.rsvpHeading}>RSVP</h2>
-      <p className={classes.rsvpDate}>by Feb 1st, 2024</p>
-      <a href="YOUR_RSVP_LINK_HERE" className={classes.rsvpLink}>RSVP Now</a>
-    </div>
-    <div className={classes.containerOurStory}>
-      <div className={classes.title}>Our Story</div>
-      <div className={classes.columnsContainer}>
-        <div className={classes.leftColumn}>
-          <p className={classes.loremText}>
-          Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in the Aegen Sea. Now we want to solidify our love Infront of our family and friends as we begin this new chapter of our lives together.
-          </p>
-          <div className={classes.buttonContainer}>
-            <Link to="/our-story">
-              <button className={classes.button}>
-                More About Us
-              </button>
-            </Link>
-          </div>
+        <div className={classes.textContainer}>
+          <h2 className={classes.heading}>WE ARE GETTING MARRIED</h2>
+          <p className={classes.subheading}>June 29th, 2024</p>
         </div>
-      <div className={classes.rightColumn}>
+      </div>
+      <div className={classes.flowerContainer}>
         <img
-          className={classes.columnImage}
-          src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-215.jpg"}
-          alt="Right Column"
+          className={classes.backgroundImage}
+          src={process.env.PUBLIC_URL + "assets/External/3.png"}
+          alt="Background"
         />
       </div>
-    </div>
-  </div>
-  <div className={classes.containerLocation}>
-    <img src={process.env.PUBLIC_URL + "assets/External/1.png"} alt="Left" className={classes.leftImage} />
-    <img src={process.env.PUBLIC_URL + "assets/External/2.png"} alt="Right" className={classes.rightImage} />
-    <div>
-      <h1 className={classes.headingLocation}>Location</h1>
-      <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
-    </div>
-  </div>
-  <div className={classes.containerStockholm}>
-    <img
-      src={process.env.PUBLIC_URL + "assets/External/stockholm.png"}
-      alt="Stockholm"
-      className={classes.imageStockholm}
-    />
-  </div>
-  <div className={classes.homeContainer}>
-    <div className={classes.title}>The Wedding Day</div>
-    <div className={classes.columnsContainerAbout}>
-      <div className={classes.column}>
-        <div className={classes.whereTitle}>When</div>
-        <div className={classes.address}>Saturday, June 29th, 2024</div>
-        <div className={classes.address}>Ceremony: 3PM</div>
-        <div className={classes.address}>Reception: 5PM</div>
+      <div className={classes.rsvpContainer}>
+        <h2 className={classes.rsvpHeading}>RSVP</h2>
+        <p className={classes.rsvpDate}>by Feb 1st, 2024</p>
+        <a href="YOUR_RSVP_LINK_HERE" className={classes.rsvpLink}>RSVP Now</a>
       </div>
-      <div className={`${classes.column} ${classes.middleColumn}`}>
-        <img
-          className={classes.imageAbout}
-          src={process.env.PUBLIC_URL + "assets/External/flower.png"}
-          alt="Flower"
-        />
-      </div>
-      <div className={classes.column}>
-        <div className={classes.whereTitle}>Where</div>
-        <div className={classes.address}>SÅNGA KYRKA</div>
-        <div className={classes.address}>SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN</div>
+      <div className={classes.containerOurStory}>
+        <div className={classes.title}>Our Story</div>
+        <div className={classes.columnsContainer}>
+          <div className={classes.leftColumn}>
+            <p className={classes.loremText}>
+            Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in the Aegen Sea. Now we want to solidify our love Infront of our family and friends as we begin this new chapter of our lives together.
+            </p>
+            <div className={classes.buttonContainer}>
+              <Link to="/our-story">
+                <button className={classes.button}>
+                  More About Us
+                </button>
+              </Link>
+            </div>
+          </div>
+        <div className={classes.rightColumn}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-215.jpg"}
+            alt="Right Column"
+          />
+        </div>
       </div>
     </div>
-    <div className={classes.buttonContainer}>
-      <Link to="/stockholm-tips">
-        <button className={classes.button}>
-          Tips for things to do in Stockholm
-        </button>
-      </Link>
+    <div className={classes.containerLocation}>
+      <img src={process.env.PUBLIC_URL + "assets/External/1.png"} alt="Left" className={classes.leftImage} />
+      <img src={process.env.PUBLIC_URL + "assets/External/2.png"} alt="Right" className={classes.rightImage} />
+      <div className={classes.zIndex}>
+        <h1 className={classes.headingLocation}>Location</h1>
+        <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
+      </div>
+    </div>
+    <div className={classes.containerStockholm}>
+      <img
+        src={process.env.PUBLIC_URL + "assets/External/stockholm.png"}
+        alt="Stockholm"
+        className={classes.imageStockholm}
+      />
+    </div>
+    <div className={classes.homeContainer}>
+      <div className={classes.title}>The Wedding Day</div>
+      <div className={classes.columnsContainerAbout}>
+        <div className={classes.column}>
+          <div className={classes.whereTitle}>When</div>
+          <div className={classes.address}>Saturday, June 29th, 2024</div>
+          <div className={classes.address}>Ceremony: 3PM</div>
+          <div className={classes.address}>Reception: 5PM</div>
+        </div>
+        <div className={`${classes.column} ${classes.middleColumn}`}>
+          <img
+            className={classes.imageAbout}
+            src={process.env.PUBLIC_URL + "assets/External/flower.png"}
+            alt="Flower"
+          />
+        </div>
+        <div className={classes.column}>
+          <div className={classes.whereTitle}>Where</div>
+          <div className={classes.address}>SÅNGA KYRKA</div>
+          <div className={classes.address}>SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN</div>
+        </div>
+      </div>
+      <div className={classes.buttonContainer}>
+        <Link to="/stockholm-tips">
+          <button className={classes.button}>
+            Tips for things to do in Stockholm
+          </button>
+        </Link>
+      </div>
     </div>
   </div>
-  </>
   );
 };
 
