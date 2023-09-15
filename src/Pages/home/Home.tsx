@@ -1,13 +1,14 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const useStyles = createUseStyles({
     container: {
       position: 'relative',
       maxWidth: '100%',
-      height: 550,
-      maxHeight: 550,
+      height: 700,
+      maxHeight: 700,
     },
     image: {
       width: '100%',
@@ -70,18 +71,24 @@ const Home: React.FC = () => {
     rightColumn: {
       flex: 1,
       marginLeft: '10px',
+      display: 'flex',
+      justifyContent: 'center',
+
     },
     loremText: {
       fontSize: '26px',
       padding: "0 40px",
     },
     columnImage: {
-      width: '100%',
+      width: '700px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      zIndex: 3,
     },
     containerLocation: {
       height: 400,
       marginTop: 0,
-      backgroundColor: '#C1C69D',
+      backgroundColor: '#B2BA99',
       position: 'relative',
       display: 'flex',
       justifyContent: 'center',
@@ -142,6 +149,7 @@ const Home: React.FC = () => {
       alignItems: 'center',
       textAlign: 'center',
       padding: '20px',
+      paddingBottom: "150px"
     },
     titleAbout: {
       fontSize: '24px',
@@ -168,12 +176,62 @@ const Home: React.FC = () => {
       maxHeight: '100%',
     },
     whereTitle: {
-      fontSize: '20px',
+      fontSize: '32px',
       fontWeight: 'bold',
       marginTop: '20px',
     },
     address: {
-      fontSize: '18px',
+      fontSize: '22px',
+    },
+    rsvpContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '2rem 0',
+    },
+    rsvpHeading: {
+      fontSize: '2rem',
+      fontWeight: 'bold',
+      marginBottom: '1rem',
+      fontFamily: "'Cinzel', serif",
+    },
+    rsvpDate: {
+      fontSize: '1.5rem',
+      marginBottom: '2rem',
+    },
+    rsvpLink: {
+      fontSize: '1.5rem',
+      textDecoration: 'none',
+      padding: '0.8rem 2.5rem',
+      border: '2px solid #333',
+      borderRadius: '8px',
+      color: '#333',
+      borderColor: '#B2BA99',
+      '&:hover': {
+        backgroundColor: '#B2BA99',
+        color: 'white',
+      }
+    },
+    button: {
+      fontSize: '1.5rem',
+      textDecoration: 'none',
+      padding: '0.8rem 2.5rem',
+      border: '2px solid #333',
+      borderRadius: '8px',
+      color: 'white',
+      backgroundColor: '#B2BA99',
+      borderColor: '#B2BA99',
+      cursor: 'pointer',
+      '&:hover': {
+        color: 'white',
+        backgroundColor: '#97AA55',
+      }
+    },
+    buttonContainer: {
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '2rem',
     },
   });
 
@@ -183,7 +241,7 @@ const Home: React.FC = () => {
     <>
     <div className={classes.container}>
       <img
-        src={process.env.PUBLIC_URL + "assets/Wedding Images/Start Page.jpg"}
+        src={process.env.PUBLIC_URL + "assets/Wedding Images/Start Page2.png"}
         alt="Wedding"
         className={classes.image}
       />
@@ -199,27 +257,25 @@ const Home: React.FC = () => {
         alt="Background"
         />
     </div>
+    <div className={classes.rsvpContainer}>
+      <h2 className={classes.rsvpHeading}>RSVP</h2>
+      <p className={classes.rsvpDate}>by Feb 1st, 2024</p>
+      <a href="YOUR_RSVP_LINK_HERE" className={classes.rsvpLink}>RSVP Now</a>
+    </div>
     <div className={classes.containerOurStory}>
       <div className={classes.title}>Our Story</div>
       <div className={classes.columnsContainer}>
         <div className={classes.leftColumn}>
           <p className={classes.loremText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
-            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
-            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
-            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
-            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu velit id velit
-            tincidunt interdum. Nulla facilisi. Sed tincidunt dolor id nisl varius, vel commodo
-            nunc euismod. 
+          Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in the Aegen Sea. Now we want to solidify our love Infront of our family and friends as we begin this new chapter of our lives together.
           </p>
+          <div className={classes.buttonContainer}>
+            <Link to="/our-story">
+              <button className={classes.button}>
+                More About Us
+              </button>
+            </Link>
+          </div>
         </div>
       <div className={classes.rightColumn}>
         <img
@@ -250,9 +306,9 @@ const Home: React.FC = () => {
     <div className={classes.columnsContainerAbout}>
       <div className={classes.column}>
         <div className={classes.whereTitle}>When</div>
-        <div className={classes.address}>Sunday, Sep 23 2024</div>
-        <div className={classes.address}>Wedding Ceremony 10am</div>
-        <div className={classes.address}>Wedding Reception 12am</div>
+        <div className={classes.address}>Saturday, June 29th, 2024</div>
+        <div className={classes.address}>Ceremony: 3PM</div>
+        <div className={classes.address}>Reception: 5PM</div>
       </div>
       <div className={`${classes.column} ${classes.middleColumn}`}>
         <img
@@ -263,8 +319,16 @@ const Home: React.FC = () => {
       </div>
       <div className={classes.column}>
         <div className={classes.whereTitle}>Where</div>
-        <div className={classes.address}>Your Address in Sweden</div>
+        <div className={classes.address}>SÅNGA KYRKA</div>
+        <div className={classes.address}>SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN</div>
       </div>
+    </div>
+    <div className={classes.buttonContainer}>
+      <Link to="/stockholm-tips">
+        <button className={classes.button}>
+          Tips for things to do in Stockholm
+        </button>
+      </Link>
     </div>
   </div>
   </>
