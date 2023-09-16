@@ -101,7 +101,15 @@ const Home: React.FC = () => {
         marginTop: '20px',  // Adjust this to your preference
         textAlign: 'center',
       },
-
+    },
+    rightColumnBB: {
+      flex: 1,
+      marginLeft: '10px',
+      '@media (max-width: 1199px)': {
+        marginLeft: 0,
+        marginTop: '20px',  // Adjust this to your preference
+        textAlign: 'center',
+      },
     },
     rightColumn: {
       flex: 1,
@@ -110,6 +118,17 @@ const Home: React.FC = () => {
       justifyContent: 'center',
       '@media (max-width: 1199px)': {
         marginLeft: 0,
+        marginBottom: '20px',  // Adjust this to your preference
+        padding: "0px",  // Adjust padding as necessary
+      }
+    },
+    leftColumnB: {
+      flex: 1,
+      marginRight: '10px',
+      display: 'flex',
+      justifyContent: 'center',
+      '@media (max-width: 1199px)': {
+        marginRight: 0,
         marginBottom: '20px',  // Adjust this to your preference
         padding: "0px",  // Adjust padding as necessary
       }
@@ -201,16 +220,34 @@ const Home: React.FC = () => {
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
       fontFamily: "'Cinzel', serif",
     },
-    flowerContainer: {
+    flowerContainerB: {
       position: 'relative',
       // less than 1200px width
       '@media (max-width: 1199px)': {
         position: 'absolute',
       },
     },
+    flowerContainer: {
+      position: 'relative',
+    },
     containerOurStory: {
       padding: '75px 0',
       position: 'relative',
+    },
+    containerOurStoryB: {
+      padding: '75px 0',
+      position: 'relative',
+      '@media (max-width: 1199px)': {
+        display: 'none',
+      },
+    },
+    containerOurStoryE: {
+      padding: '75px 0',
+      marginTop: "150px",
+      position: 'relative',
+      '@media (min-width: 1199px)': {
+        display: 'none',
+      },
     },
     containerStockholm: {
       position: 'relative',
@@ -473,7 +510,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       <div className={classes.rightColumnB}>
-        <div className={classes.flowerContainer}>
+        <div className={classes.flowerContainerB}>
           <img
             className={classes.backgroundImageB}
             src={process.env.PUBLIC_URL + "assets/External/3.png"}
@@ -486,6 +523,58 @@ const Home: React.FC = () => {
           alt="Right Column"
         />
       </div>
+      </div>
+    </div>
+    <div className={classes.containerOurStoryB}>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumnB}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture2.jpg"}
+            alt="Right Column"
+          />
+        </div>
+        <div className={classes.rightColumnBB}>
+          <div className={classes.title}>
+            Gift - Registry
+          </div>
+          <p className={classes.loremText}>
+            Not sure what to get us for wedding gift? We are planning a trip to New Zealand for our Honeymoon and would love your contribution to make it extra special 
+          </p>
+          <div className={classes.buttonContainer}>
+            <Link to="/our-story">
+              <button className={classes.button}>
+                Registry
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className={classes.containerOurStoryE}>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Gift - Registry
+          </div>
+          <p className={classes.loremText}>
+            Not sure what to get us for wedding gift? We are planning a trip to New Zealand for our Honeymoon and would love your contribution to make it extra special 
+          </p>
+          <div className={classes.buttonContainer}>
+            <Link to="/gifts">
+              <button className={classes.button}>
+                Registry
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className={classes.rightColumn}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture2.jpg"}
+            alt="Right Column"
+          />
+        </div>
       </div>
     </div>
   </div>
