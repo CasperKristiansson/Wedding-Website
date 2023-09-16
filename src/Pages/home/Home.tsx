@@ -542,7 +542,7 @@ const Home: React.FC = () => {
             Not sure what to get us for wedding gift? We are planning a trip to New Zealand for our Honeymoon and would love your contribution to make it extra special 
           </p>
           <div className={classes.buttonContainer}>
-            <Link to="/our-story">
+            <Link to="/gifts">
               <button className={classes.button}>
                 Registry
               </button>
