@@ -1,6 +1,7 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
+import { giftsMapping } from "./giftsMapping";
 
 const useStyles = createUseStyles({
   container: {
@@ -157,11 +158,11 @@ const useStyles = createUseStyles({
     },
   },
   buttonContainer: {
-    display: "flex",
-    justifyContent: "center",
     marginTop: "2rem",
     "@media (max-width: 1199px)": {
       marginBottom: "20px", // Adjust this to your preference
+      display: "flex",
+      justifyContent: "center",
     },
   },
   button: {
@@ -185,6 +186,63 @@ const useStyles = createUseStyles({
     "@media (min-width: 1199px)": {
       display: "none",
     },
+  },
+  giftContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '50px',
+    marginTop: '50px',
+    '@media (max-width: 1200px)': {
+      flexDirection: 'column',
+    },
+  },
+  leftColumnE: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 80px',
+    '@media (max-width: 1200px)': {
+      margin: '0 20px',
+    },
+  },
+  rightColumnE: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    margin: '0 80px',
+    '@media (max-width: 1200px)': {
+      margin: '0 20px',
+    },
+  },
+  giftImage: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+  giftButton: {
+    marginTop: '20px',
+  },
+  giftName: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+  },
+  giftCost: {
+    fontSize: '18px',
+  },
+  verticalLine: {
+    height: '200px',
+    width: '2px', // you can adjust this as per your requirement
+    backgroundColor: 'gray', // change color as needed
+    alignSelf: 'center',
+    margin: '0 20px', // provide spacing between the columns
+  },
+  verticalLineContainer: {
+    // center it
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -305,6 +363,40 @@ const Gifts: React.FC = () => {
           </div>
         </div>
       </div>
+      {giftsMapping.map((gift) => (
+        <>
+        <div key={gift.id} className={classes.giftContainer}>
+          <div className={classes.leftColumnE}>
+            <img src={gift.image} alt={gift.name} className={classes.giftImage} />
+          </div>
+          <div className={classes.rightColumnE}>
+            <div className={classes.giftName}>
+              {gift.name}
+            </div>
+            <u className={classes.giftCost}>
+              Description:
+            </u>
+            <div className={classes.giftCost}>
+              {gift.description}
+            </div>
+            <u className={classes.giftCost}>
+              Cost:
+            </u>
+            <div className={classes.giftCost}>
+              {gift.cost}
+            </div>
+            <div className={classes.buttonContainer}>
+              <button className={classes.button}>
+                Pay For Gift
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className={classes.verticalLineContainer}>
+          <div className={classes.verticalLine} />
+        </div>
+        </>
+      ))}
     </>
   );
 };
