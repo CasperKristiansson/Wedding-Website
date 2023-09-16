@@ -60,6 +60,22 @@ const Home: React.FC = () => {
         marginTop: -420,
       },
     },
+    backgroundImageB: {
+      width: '900px',
+      zIndex: 1,
+      position: 'absolute',
+      left: 0,
+      marginTop: -200,
+      '@media (max-width: 1199px)': {
+        marginTop: -180,
+        left: '50%',
+        transform: 'translateX(-50%)',
+      },
+      '@media (max-width: 649px)': {
+        marginTop: -100,
+        width: "500px",
+      },
+    },
     title: {
       textAlign: 'center',
       fontSize: '64px',
@@ -98,11 +114,28 @@ const Home: React.FC = () => {
         padding: "0px",  // Adjust padding as necessary
       }
     },
+    rightColumnB: {
+      flex: 1,
+      marginLeft: '10px',
+      display: 'flex',
+      justifyContent: 'center',
+      '@media (max-width: 1199px)': {
+        marginLeft: 0,
+        marginBottom: '20px',  // Adjust this to your preference
+        padding: "0px",  // Adjust padding as necessary
+        marginTop: '150px',  // Adjust this to your preference
+        position: 'relative',
+      }
+    },
     loremText: {
       fontSize: '26px',
       padding: "0 40px",
       '@media (max-width: 1199px)': {
         padding: "0 20px",  // Adjust padding as necessary
+        // all li should be aligned left
+        '& li': {
+          textAlign: 'left',
+        }
       },
       '@media (max-width: 700px)': {
         fontSize: '18px',
@@ -110,6 +143,15 @@ const Home: React.FC = () => {
       }
     },
     columnImage: {
+      width: '700px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      zIndex: 3,
+      '@media (max-width: 1199px)': {
+        maxWidth: '100%',  // Adjust the image size as needed
+      }
+    },
+    columnImageB: {
       width: '700px',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -161,9 +203,14 @@ const Home: React.FC = () => {
     },
     flowerContainer: {
       position: 'relative',
+      // less than 1200px width
+      '@media (max-width: 1199px)': {
+        position: 'absolute',
+      },
     },
     containerOurStory: {
       padding: '75px 0',
+      position: 'relative',
     },
     containerStockholm: {
       position: 'relative',
@@ -185,7 +232,7 @@ const Home: React.FC = () => {
       alignItems: 'center',
       textAlign: 'center',
       padding: '20px',
-      paddingBottom: "150px"
+      paddingBottom: "100px"
     },
     titleAbout: {
       fontSize: '24px',
@@ -383,6 +430,62 @@ const Home: React.FC = () => {
             Tips for things to do in Stockholm
           </button>
         </Link>
+      </div>
+    </div>
+    <div className={classes.containerOurStory}>
+      <div className={classes.title}>
+        Wedding Day Itinerary
+      </div>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumn}>
+          <p className={classes.loremText}>
+            The wedding day will begin with a cermony at Sanga Kyrka, and then a reception at Ekebyhovs Slott. BJÖRKUDDSVÄGEN 107, 178 34 EKERÖ
+            <br />
+            <br />
+            Before the wedding day there will be optional events open to whoever wants to join. After the wedding there will be coffee and small bites at Kristiansson’s for gift opening. Make sure to fill in the RSVP if interested in joining. 
+            <br />
+            <br />
+            <u>Optional Events Before the Wedding</u>
+            <ul>
+              <li>
+                Walking tour and rooftop bar guide with Fanny and Nate – Monday 24th 
+              </li>
+              <li>
+                Day Cruise in Achapelago’s – Tuesday 25th 
+              </li>
+              <li>
+                BBQ at Kristiansson’s House – Thursday 27th
+              </li>
+            </ul>
+            <u>Optional Events After the Wedding</u>
+            <ul>
+              <li>
+                Gift Opening and Coffee – Sunday 30th
+              </li>
+            </ul>
+          </p>
+          <div className={classes.buttonContainer}>
+            <Link to="/itinerary">
+              <button className={classes.button}>
+                Itinerary
+              </button>
+            </Link>
+          </div>
+        </div>
+      <div className={classes.rightColumnB}>
+        <div className={classes.flowerContainer}>
+          <img
+            className={classes.backgroundImageB}
+            src={process.env.PUBLIC_URL + "assets/External/3.png"}
+            alt="Background"
+          />
+        </div>
+        <img
+          className={classes.columnImageB}
+          src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture1.jpg"}
+          alt="Right Column"
+        />
+      </div>
       </div>
     </div>
   </div>
