@@ -39,7 +39,7 @@ const useStyles = createUseStyles({
 			alignItems: 'center',
 			justifyContent: 'flex-end',
 			gap: '1.2rem',
-      "@media (max-width: 1180px)": {
+      "@media (max-width: 1260px)": {
         display: 'none',
       },
 		},
@@ -58,7 +58,7 @@ const useStyles = createUseStyles({
       display: 'none',
       flexDirection: 'column',
       cursor: 'pointer',
-      "@media (max-width: 1180px)": {
+      "@media (max-width: 1260px)": {
         display: 'flex',
       },
     },
@@ -81,7 +81,7 @@ const useStyles = createUseStyles({
       zIndex: 1000,
       padding: '1rem 0', // Add padding to the top and bottom
       boxShadow: "0 2px 2px -2px gray",
-      "@media (max-width: 1180px)": {
+      "@media (max-width: 1260px)": {
         display: (props: { isOpen: boolean }) => props.isOpen ? 'flex' : 'none',
       },
     },
