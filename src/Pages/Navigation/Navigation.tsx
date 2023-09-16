@@ -127,6 +127,9 @@ export const Navigation: React.FC<{}> = (): JSX.Element => {
         <NavLink to="/our-story" className={classes.navLink}>
           Our Story
         </NavLink>
+        <NavLink to="/itinerary" className={classes.navLink}>
+          Itinerary
+        </NavLink>
         <NavLink to="/wedding-day" className={classes.navLink}>
           Wedding Day
         </NavLink>
@@ -158,6 +161,9 @@ export const Navigation: React.FC<{}> = (): JSX.Element => {
         </NavLink>
         <NavLink to="/qa" className={classes.mobileNavLink}>
           Q&A
+        </NavLink>
+        <NavLink to="/itinerary" className={classes.mobileNavLink}>
+          Itinerary
         </NavLink>
       </div>
     </div>
