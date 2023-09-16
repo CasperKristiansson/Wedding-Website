@@ -1,93 +1,110 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
-const Gifts: React.FC = () => {
-  const useStyles = createUseStyles({
-    container: {
-      position: 'relative',
-      maxWidth: '100%',
-      height: 550,
-      maxHeight: 550,
+const useStyles = createUseStyles({
+  container: {
+    position: 'relative',
+    maxWidth: '100%',
+    height: 550,
+    maxHeight: 550,
+  },
+  image: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  },
+  textContainer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    textAlign: 'center',
+    lineHeight: '0.5',
+    background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%)',
+    padding: '20px 0',
+    '@media (max-width: 460px)': {
+      lineHeight: '1',
     },
-    image: {
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
+  },
+  heading: {
+    fontSize: '55px',
+    fontWeight: 'bold',
+    color: '#fff',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+    fontFamily: "'Cinzel', serif"
+  },
+  subheading: {
+    fontSize: '35px',
+    color: '#fff',
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+    fontFamily: "'Cinzel', serif",
+  },
+  containerDescription: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '20px 5% 10px 5%',
+    '@media (max-width: 1099px)': { // Media query for less than 1100px
+      flexDirection: 'column', // Make the children stack vertically
     },
-    textContainer: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      textAlign: 'center',
-      lineHeight: '0.5',
-      background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%)',
-      padding: '20px 0',
+  },
+  leftColumn: {
+    flex: 1,
+    marginLeft: '5%',
+    '@media (max-width: 1099px)': {
+      marginLeft: 0, // Remove the left margin for a cleaner look on small screens
+      marginBottom: '20px', // Add some bottom margin for spacing between columns
     },
-    heading: {
-      fontSize: '55px',
-      fontWeight: 'bold',
-      color: '#fff',
-      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      fontFamily: "'Cinzel', serif"
+  },
+  rightColumn: {
+    flex: 1,
+    '@media (max-width: 1099px)': {
+      marginLeft: 0, // Ensure no left margin on small screens
     },
-    subheading: {
-      fontSize: '35px',
-      color: '#fff',
-      textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-      fontFamily: "'Cinzel', serif",
+  },
+  title: {
+    fontSize: '36px',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+    fontFamily: "'Cinzel', serif",
+    marginLeft: '22px',
+  },
+  imageDescription: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+  loremText: {
+    marginTop: '20px',
+    fontSize: '18px',
+    lineHeight: '1.5',
+    marginLeft: 50,
+    "@media (max-width: 1099px)": {
+      marginLeft: 0, // Ensure no left margin on small screens
     },
-    containerDescription: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '100px 5% 10px 5%',
-    },
-    leftColumn: {
-      flex: 1,
-      marginLeft: '5%',
-    },
-    rightColumn: {
-      flex: 1,
-    },
-    title: {
-      fontSize: '36px',
-      fontWeight: 'bold',
-      marginBottom: '10px',
-      fontFamily: "'Cinzel', serif",
-      marginLeft: '22px',
-    },
-    imageDescription: {
-      maxWidth: '100%',
-      height: 'auto',
-    },
-    loremText: {
-      marginTop: '20px',
-      fontSize: '18px',
-      lineHeight: '1.5',
-    },
-    numberedList: {
-      listStyleType: 'decimal', // Use decimal numbering for the list
-      paddingLeft: '20px', // Add some left padding for the list items
-    },
-    listItem: {
-      marginBottom: '10px',
-    },
-    containerTitle: {
-      background: '#C1C69D',
-      height: '150px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-      fontSize: '42px',
-      fontWeight: 'bold',
-      zIndex: 3,
-			fontFamily: "'Cinzel', serif",
-      color: 'white',
-    },
-  });
+  },
+  numberedList: {
+    listStyleType: 'decimal', // Use decimal numbering for the list
+    paddingLeft: '20px', // Add some left padding for the list items
+  },
+  listItem: {
+    marginBottom: '10px',
+  },
+  containerTitle: {
+    background: '#C1C69D',
+    height: '150px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    fontSize: '42px',
+    fontWeight: 'bold',
+    zIndex: 3,
+    fontFamily: "'Cinzel', serif",
+    color: 'white',
+  },
+});
 
+const Gifts: React.FC = () => {
   const classes = useStyles();
 
   return (
@@ -99,12 +116,11 @@ const Gifts: React.FC = () => {
         className={classes.image}
       />
       <div className={classes.textContainer}>
-        <h2 className={classes.heading}>Gift System</h2>
+        <h2 className={classes.heading}>Gift Registry</h2>
       </div>
     </div>
     <div className={classes.containerDescription}>
       <div className={classes.leftColumn}>
-      <div className={classes.title}>How it Works</div>
         <img
           src={process.env.PUBLIC_URL + 'assets/External/Example Gift.png'}
           alt="How It Works"
@@ -113,7 +129,7 @@ const Gifts: React.FC = () => {
       </div>
       <div className={classes.rightColumn}>
       <div className={classes.loremText}>
-          {/* Properly styled numbered list */}
+        <div className={classes.title}>How it Works</div>
           <ol className={classes.numberedList}>
             <li className={classes.listItem}>
               Select one of the available gifts from the list below. (Grayed out gifts are already taken)
