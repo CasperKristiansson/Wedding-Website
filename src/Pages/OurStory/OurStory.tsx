@@ -28,6 +28,9 @@ const useStyles = createUseStyles({
     '& > *': {
       margin: '0 50px',
     },
+    '@media (max-width: 1200px)': {
+      flexDirection: 'column',
+    },
   },
   containerDescriptionTwo: {
     display: 'flex',
@@ -37,14 +40,30 @@ const useStyles = createUseStyles({
     '& > *': {
       margin: '0 50px',
     },
+    '@media (max-width: 1200px)': {
+      flexDirection: 'column',
+    },
   },
   leftColumn: {
     flex: 1,
     marginLeft: '20px',
+    '@media (max-width: 1200px)': {
+      order: 1, // Image first
+      margin: 0,
+      marginBottom: '20px', // spacing between image and text on mobile
+      // center it
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '100%',
+    },
   },
   rightColumn: {
     flex: 1,
     position: 'relative',
+    '@media (max-width: 1200px)': {
+      order: 2, // Text second
+    },
   },
   titleDescription: {
     fontSize: '36px',
@@ -75,12 +94,29 @@ const useStyles = createUseStyles({
   image: {
     position: 'absolute',
     height: '100%',
+    '@media (max-width: 1200px)': {
+      display: 'none',
+    }
   },
   imageReverse: {
     position: 'absolute',
     height: '100%',
     transform: 'scaleX(-1)',
     right: 0,
+    '@media (max-width: 1200px)': {
+      display: 'none',
+    }
+  },
+  imageReverseE: {
+    position: 'absolute',
+    height: '100%',
+    transform: 'scaleX(-1)',
+    right: 0,
+    '@media (min-width: 1200px)': {
+      display: 'none',
+    },
+    opacity: 0.5,
+    
   },
   galleryContainer: {
     padding: '50px 5% 50px 5%',
@@ -107,9 +143,13 @@ const OurStory: React.FC = () => {
         alt="Wedding"
         className={classes.imageReverse}
       />
+      <img
+        src={process.env.PUBLIC_URL + "/assets/External/1_side.png"}
+        alt="Wedding"
+        className={classes.imageReverseE}
+      />
       <div className={classes.title}>Our Story</div>
       <div className={classes.containerDescription}>
-        
         <div className={classes.leftColumn}>
           <img
             src={process.env.PUBLIC_URL + "/assets/Wedding Images/07. 02. 2023-57.jpg"}
@@ -138,57 +178,49 @@ const OurStory: React.FC = () => {
         />
       </div>
     </div>
-    <div className={classes.galleryContainer}>
-      <Gallery
-        images={images}
-        enableImageSelection={false}
-        rowHeight={300}
-        maxRows={2}
-      />
-    </div>
     <VerticalTimeline
       lineColor='#C1C69D'
     >
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
-        date="2011 - present"
+        date="May 2017"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
         icon={Icon(danceImage)}
       >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h3 className="vertical-timeline-element-title">First Date</h3>
+        <h4 className="vertical-timeline-element-subtitle">Daytona Beach, FL</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Fanny was a freshman at Embry-Riddle, and Nathaniel was a Sophomore. At the beginning of summer, they matched on Tinder and went on their first date. Mini golf and dinner started their story together. 
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
-        date="2011 - present"
+        date="August 2021"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
         icon={Icon(danceImage)}
       >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h3 className="vertical-timeline-element-title">First Place</h3>
+        <h4 className="vertical-timeline-element-subtitle">Sanford, FL</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          After graduation, Fanny and Nathaniel moved into their first apartment in Sanford, Florida. Nathaniel worked as a flight instructor in Daytona Beach, and Fanny as a Transportation Engineer in Orlando
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
-        date="2011 - present"
+        date="July 2022"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
         icon={Icon(danceImage)}
       >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h3 className="vertical-timeline-element-title">The Proposal</h3>
+        <h4 className="vertical-timeline-element-subtitle">Santorini, Greece</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Fanny’s parents, Eva and Jonas, took Fanny and Nathaniel on a trip of a lifetime. Island jumping around Greece. Their trip took them to Santorini, where Eva and Jonas got engaged all those years ago. During their first evening there, Nathaniel got down on a knee and proposed to Fanny on top of a volcano as the sun was setting in the horizon. 
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline>
