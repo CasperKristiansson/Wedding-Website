@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 import { giftsMapping } from "./giftsMapping";
@@ -180,6 +180,24 @@ const useStyles = createUseStyles({
       backgroundColor: "#97AA55",
     },
   },
+  buttonE: {
+    fontSize: "0.8rem",
+    textDecoration: "none",
+    padding: "0.5rem 1rem",
+    border: "2px solid #333",
+    borderRadius: "8px",
+    color: "white",
+    backgroundColor: "#B2BA99",
+    borderColor: "#B2BA99",
+    cursor: "pointer",
+    "&:hover": {
+      color: "white",
+      backgroundColor: "#97AA55",
+    },
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+  },
   containerOurStoryE: {
     padding: "50px 0",
     position: "relative",
@@ -213,7 +231,7 @@ const useStyles = createUseStyles({
     flexDirection: 'column',
     margin: '0 80px',
     '@media (max-width: 1200px)': {
-      margin: '0 20px',
+      margin: '20px 20px',
     },
   },
   giftImage: {
@@ -244,9 +262,89 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark fade
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1000,  // to ensure it's on top
+  },
+  popup: {
+    width: '80%',
+    height: '80%',
+    backgroundColor: 'white',
+    maxWidth: '800px',
+    maxHeight: '800px',
+    padding: '20px',
+    overflow: 'auto',
+    borderRadius: '8px',
+    boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
+    position: 'relative',
+  },
+  popupHeader: {
+    borderBottom: '1px solid #ddd',
+    padding: '10px 0',
+    textAlign: 'center',
+    marginBottom: '20px',
+  },
+  popupTitle: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+  },
+  paymentMethods: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '50px',
+    marginBottom: '30px',
+    '@media (max-width: 600px)': {
+      flexDirection: 'column',
+    },
+  },
+  paymentColumn: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    '@media (max-width: 600px)': {
+      marginBottom: '20px',
+    },
+  },
+  paymentDivider: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    padding: '0 20px',
+    '@media (max-width: 600px)': {
+      display: 'none',
+    },
+  },
+  paymentImage: {
+    width: '75%',
+  },
+  paymentText: {
+    marginTop: '50px',
+    textAlign: 'center',
+    '@media (max-width: 600px)': {
+      marginTop: '0px',
+      marginBottom: '50px',
+    },
+  },
+  closeButton: {
+    
+  },
 });
 
 const Gifts: React.FC = () => {
+  const [isPopupOpen, setPopupOpen] = useState({
+    open: false,
+    id: 0,
+  });
+
   const classes = useStyles();
 
   return (
@@ -386,7 +484,13 @@ const Gifts: React.FC = () => {
               {gift.cost}
             </div>
             <div className={classes.buttonContainer}>
-              <button className={classes.button}>
+              <button
+                className={classes.button}
+                onClick={() => setPopupOpen({
+                  open: true,
+                  id: gift.id,
+                })}
+              >
                 Pay For Gift
               </button>
             </div>
@@ -397,6 +501,58 @@ const Gifts: React.FC = () => {
         </div>
         </>
       ))}
+      {isPopupOpen.open && (
+        <div className={classes.overlay}>
+          <div className={classes.popup}>
+            <button className={classes.buttonE} onClick={() => setPopupOpen({
+              open: false,
+              id: 0,
+            })}>Close</button>
+            
+            <div className={classes.popupHeader}>
+              <div className={classes.popupTitle}>Buy Item</div>
+              <div>
+                {/* Find the product name where isPopupOpen.id === id */}
+                {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}
+              </div>
+            </div>
+
+            <div className={classes.paymentMethods}>
+              <div className={classes.paymentColumn}>
+                <img src={process.env.PUBLIC_URL + "assets/External/swish.svg"} alt="Payment Method 1" className={classes.paymentImage} />
+                <div className={classes.paymentText}>
+                  <strong>Requested amount:</strong>
+                  <br />
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.cost}
+                  <br />
+                  to 070-2069105
+                  <br />
+                  <strong>Message:</strong>
+                  <br />
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}
+                </div>
+              </div>
+              
+              <div className={classes.paymentDivider}>OR</div>
+              
+              <div className={classes.paymentColumn}>
+                <img src={process.env.PUBLIC_URL + "assets/External/venmo.webp"} alt="Payment Method 2" className={classes.paymentImage} />
+                <div className={classes.paymentText}>
+                  <strong>Requested amount:</strong>
+                  <br />
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.cost}
+                  <br />
+                  to 070-2069105
+                  <br />
+                  <strong>Message:</strong>
+                  <br />
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

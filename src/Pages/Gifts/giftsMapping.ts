@@ -60,7 +60,7 @@ export const giftsMapping = [
     name: "Abel Tasman national park (cruise and hiking exkursion)",
     description:
       "Discover the jewel in the crown of New Zealand’s South Island on this full-day Abel Tasman National Park hiking tour with cruise. Travel from Nelson to Kaiteriteri with your guide, then hop aboard your water taxi. Cruise the azure-blue seas toward the heart of Abel Tasman National Park and the start-point of your trek. Follow hiking trails through the dense forest and listen as your guide points out medicinal and edible plants along the way. Gain insight into native Maori and Dutch settlers’ heritage, and enjoy lunch on Torrent Beach",
-    cost: "70USD epr person (120USD for fanny and nate)",
+    cost: "70USD per person (120USD for fanny and nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/8.jpg",
   },
   {
