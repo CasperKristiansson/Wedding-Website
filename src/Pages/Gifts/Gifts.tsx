@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { createUseStyles } from "react-jss";
-import { Link } from "react-router-dom";
 import { giftsMapping } from "./giftsMapping";
 
 const useStyles = createUseStyles({
