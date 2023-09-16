@@ -6,7 +6,7 @@ import { Navigation } from './Pages/Navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
 import Invitation from './Pages/invitation/invitation';
 import Home from './Pages/home/Home';
-import Gifts from './Pages/Gifts/Home';
+import Gifts from './Pages/Gifts/Gifts';
 import OurStory from './Pages/OurStory/OurStory';
 import WeddingDay from './Pages/WeddingDay/WeddingDay';
 import FAQ from './Pages/QuestionAnswer/QuestionAnswer';
