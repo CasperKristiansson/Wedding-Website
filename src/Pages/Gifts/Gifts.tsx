@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Link } from 'react-router-dom';
 
 const useStyles = createUseStyles({
   container: {
@@ -82,6 +83,12 @@ const useStyles = createUseStyles({
       marginLeft: 0, // Ensure no left margin on small screens
     },
   },
+  loremTextB: {
+    marginTop: '20px',
+    fontSize: '18px',
+    lineHeight: '1.5',
+    marginLeft: 22,
+  },
   numberedList: {
     listStyleType: 'decimal', // Use decimal numbering for the list
     paddingLeft: '20px', // Add some left padding for the list items
@@ -101,6 +108,82 @@ const useStyles = createUseStyles({
     zIndex: 3,
     fontFamily: "'Cinzel', serif",
     color: 'white',
+  },
+  containerOurStoryB: {
+    padding: '50px 0',
+    position: 'relative',
+    '@media (max-width: 1199px)': {
+      display: 'none',
+    },
+  },
+  columnsContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '30px',
+    padding: '0 30px',
+    '@media (max-width: 1199px)': {
+      flexDirection: 'column',
+    }
+  },
+  leftColumnB: {
+    flex: 1,
+    marginRight: '10px',
+    display: 'flex',
+    justifyContent: 'center',
+    '@media (max-width: 1199px)': {
+      marginRight: 0,
+      marginBottom: '20px',  // Adjust this to your preference
+      padding: "0px",  // Adjust padding as necessary
+    }
+  },
+  columnImage: {
+    width: '700px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    zIndex: 3,
+    '@media (max-width: 1199px)': {
+      maxWidth: '100%',  // Adjust the image size as needed
+    }
+  },
+  rightColumnBB: {
+    flex: 1,
+    marginLeft: '10px',
+    '@media (max-width: 1199px)': {
+      marginLeft: 0,
+      marginTop: '20px',  // Adjust this to your preference
+      textAlign: 'center',
+    },
+  },
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '2rem',
+    '@media (max-width: 1199px)': {
+      marginBottom: '20px',  // Adjust this to your preference
+    }
+  },
+  button: {
+    fontSize: '1.5rem',
+    textDecoration: 'none',
+    padding: '0.8rem 2.5rem',
+    border: '2px solid #333',
+    borderRadius: '8px',
+    color: 'white',
+    backgroundColor: '#B2BA99',
+    borderColor: '#B2BA99',
+    cursor: 'pointer',
+    '&:hover': {
+      color: 'white',
+      backgroundColor: '#97AA55',
+    }
+  },
+  containerOurStoryE: {
+    padding: '50px 0',
+    position: 'relative',
+    '@media (min-width: 1199px)': {
+      display: 'none',
+    },
   },
 });
 
@@ -149,6 +232,44 @@ const Gifts: React.FC = () => {
     </div>
     <div className={classes.containerTitle}>
       Reserve & pay for a Gift
+    </div>
+    <div className={classes.containerOurStoryB}>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumnB}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/External/Picture4.jpg"}
+            alt="Right Column"
+          />
+        </div>
+        <div className={classes.rightColumnBB}>
+          <div className={classes.title}>
+            New Zealand Honeymoon 2025
+          </div>
+          <p className={classes.loremTextB}>
+            Help us make our honeymoon in New Zealand extra special. Below are a few gifts, events, and bucket list items that we are dreaming about doing on our honeymoon.  We plan to travel by RV from the top of the north island to the toe of the south island. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className={classes.containerOurStoryE}>
+      <div className={classes.columnsContainer}>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            New Zealand Honeymoon 2025
+          </div>
+          <p className={classes.loremTextB}>
+            Help us make our honeymoon in New Zealand extra special. Below are a few gifts, events, and bucket list items that we are dreaming about doing on our honeymoon.  We plan to travel by RV from the top of the north island to the toe of the south island. 
+          </p>
+        </div>
+        <div className={classes.rightColumn}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/External/Picture4.jpg"}
+            alt="Right Column"
+          />
+        </div>
+      </div>
     </div>
     </>
   );
