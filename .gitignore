@@ -30,3 +30,4 @@ serverless/login/credentials.env
 AWS.env
 serverless/credentials.env
 *vendor*
+public/assets
