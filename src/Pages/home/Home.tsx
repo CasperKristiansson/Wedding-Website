@@ -451,8 +451,8 @@ const Home: React.FC = () => {
         <div className={`${classes.column} ${classes.middleColumn}`}>
           <img
             className={classes.imageAbout}
-            src={process.env.PUBLIC_URL + "assets/External/flower.png"}
-            alt="Flower"
+            src={process.env.PUBLIC_URL + "assets/External/3.png"}
+            alt="Background"
           />
         </div>
         <div className={classes.column}>
@@ -475,7 +475,7 @@ const Home: React.FC = () => {
       </div>
       <div className={classes.columnsContainer}>
         <div className={classes.leftColumn}>
-          <p className={classes.loremText}>
+          <div className={classes.loremText}>
             The wedding day will begin with a cermony at Sanga Kyrka, and then a reception at Ekebyhovs Slott. BJÖRKUDDSVÄGEN 107, 178 34 EKERÖ
             <br />
             <br />
@@ -500,7 +500,7 @@ const Home: React.FC = () => {
                 Gift Opening and Coffee – Sunday 30th
               </li>
             </ul>
-          </p>
+          </div>
           <div className={classes.buttonContainer}>
             <Link to="/itinerary">
               <button className={classes.button}>
