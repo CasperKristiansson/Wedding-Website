@@ -4,6 +4,8 @@ import { createUseStyles } from 'react-jss';
 const faqData = [
   { question: 'When is the wedding?', answer: 'Ceremony and reception is on Saturday June 29th starting at 3pm' },
   { question: 'Where is the wedding?', answer: 'The ceremony is at Sanga Kyrka: SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN' },
+  { question: "Do I need a passport to enter Sweden?", answer: "Yes. you need a passport to enter Sweden"},
+  { question: "Do I need a VISA to enter Sweden?", answer: "Yes, U.S. citizens will soon need to register with the European Travel and Information System, ETIAS, to enter Sweden. ETIAS will be operational from 2024. The ETIAS requirements for Americans traveling to Sweden are explained this page: ETIAS for Sweden for US Citizens | ETIASEU.com"},
   { question: "What is the dress code?", answer: 'The dresscode is black tie optional. Black-tie optional means that you have the option of wearing your most formal attire (think: an evening gown or tuxedo) but can also choose to wear a formal suit or cocktail dress instead. Basically, you have some flexibility to play with your fit. You can either go full-on glam in black-tie-worthy attire or opt for a slightly more relaxed but still formal ensemble. Men: Suit or tuxedo (no white or green suit, but a white dress shirt is fine). Women: evening gown or cocktail dress (no green or white dress)'},
   { question: "When should I RSVP?", answer: "RSVPs are due by February 1st. You will make on RSVP on the website for each person that is attending. Only invited guests are included in the RSVP form"},
   { question: "If I’m coming from the USA, when should I plan to arrive in Sweden?", answer: "We would recommend that you book your flights Saturday June 22nd to Monday July 1st.  Taking a departure flight on (Saturday) July 22nd , you would land in Stockholm on Sunday and have a full week before the wedding. You could return on Sunday July 30th (and arrive on the same day, Sunday in the USA) and only be gone for 1 work week. But leaving a Sunday, the day after the weeding could be tough. We would recommend you depart on  Monday July 1st  at the earliest, but that is up to you!. You can plan your trip however you like. There are some great things to see and do in Stockholm."},
@@ -89,7 +91,7 @@ const FAQ: React.FC<{}> = () => {
     <>
     <div className={classes.container}>
       <img
-        src={process.env.PUBLIC_URL + "assets/Wedding Images/Gifts.jpg"}
+        src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-24-2.jpg"}
         alt="Wedding"
         className={classes.image}
       />

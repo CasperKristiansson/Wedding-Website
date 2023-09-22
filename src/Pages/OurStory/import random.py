@@ -3,19 +3,18 @@ import os
 from PIL import Image
 
 # Define the base URL and image directory
-base_url = "assets/External/"
-image_directory = "C:\\Programming\\wedding-website\\src\\assets\\Wedding Images"
+base_url = "assets/Other Photos/"
+image_directory = r"C:\Programming\wedding-website\public\assets\Other Photos"
 
 # Generate TypeScript code
 images = []
 for image_file in os.listdir(image_directory):
-    if image_file.endswith(".jpg"):
-      src = f"{base_url}{image_file}"
-      # get the width and height of the image
-      width, height = Image.open(f"{image_directory}\\{image_file}").size
-      images.append(
-          f'   {{\n      src: "{src}",\n      width: {width},\n      height: {height},\n   }},'
-      )
+    src = f"{base_url}{image_file}"
+    # get the width and height of the image
+    width, height = Image.open(f"{image_directory}\\{image_file}").size
+    images.append(
+        f'   {{\n      src: "{src}",\n      width: {width},\n      height: {height},\n   }},'
+    )
 
 typescript_code = (
     "const images = [\n"
