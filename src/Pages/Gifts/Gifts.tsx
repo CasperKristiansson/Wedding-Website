@@ -234,8 +234,10 @@ const useStyles = createUseStyles({
     },
   },
   giftImage: {
-    maxWidth: '100%',
-    height: 'auto',
+    width: '100%', // Set the width to 100% of the container
+    height: 600, // Set a fixed height
+    objectFit: 'cover', // Make the image cover the area without stretching
+    overflow: 'hidden' // Ensure that the overflow part of image is hidden
   },
   giftButton: {
     marginTop: '20px',
@@ -458,6 +460,9 @@ const Gifts: React.FC = () => {
             />
           </div>
         </div>
+      </div>
+      <div className={classes.verticalLineContainer}>
+        <div className={classes.verticalLine} />
       </div>
       {giftsMapping.map((gift) => (
         <>

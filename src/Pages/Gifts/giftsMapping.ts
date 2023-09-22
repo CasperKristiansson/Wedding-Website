@@ -172,11 +172,4 @@ export const giftsMapping = [
     cost: "",
     image: process.env.PUBLIC_URL + "assets/Gifts/22.jpg",
   },
-  {
-    id: 23,
-    name: "Hotel Nuigh in Queenstown",
-    description: "",
-    cost: "",
-    image: process.env.PUBLIC_URL + "assets/Gifts/23.jpg",
-  },
 ];
