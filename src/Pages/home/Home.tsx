@@ -21,9 +21,8 @@ const Home: React.FC = () => {
       left: 0,
       width: '100%',
       textAlign: 'center',
-      lineHeight: '0.5',
+      lineHeight: '0',
       background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%)',
-      padding: '20px 0',
     },
     heading: {
       fontSize: '55px',
@@ -35,7 +34,8 @@ const Home: React.FC = () => {
         fontSize: '40px',
       },
       '@media (max-width: 560px)': {
-        fontSize: '22px',
+        fontSize: '26px',
+        lineHeight: '1.2',
       },
     },
     subheading: {
@@ -43,6 +43,10 @@ const Home: React.FC = () => {
       color: '#fff',
       textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
       fontFamily: "'Cinzel', serif",
+      '@media (max-width: 560px)': {
+        fontSize: '26px',
+        lineHeight: '1.2',
+      },
     },
     containerStory: {
       position: 'relative',
