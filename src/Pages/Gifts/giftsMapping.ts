@@ -9,7 +9,7 @@ export const giftsMapping = [
   },
   {
     id: 2,
-    name: "Ferry to South with Interislander Ferry",
+    name: "Ferry to South with Interislander",
     description:
       "To travel between the north island and the south island, we need to take a ferry with our RV",
     cost: "500USD",

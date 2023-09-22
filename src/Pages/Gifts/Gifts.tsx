@@ -392,8 +392,7 @@ const Gifts: React.FC = () => {
                 confirmation (phone number/email address and
                 names sent with the payment) Keep in mind that
                 the person you are sending the money to is
-                either Casper Kristiansson (Fanny Kristiansson's
-                brother) or ...
+                either Casper Kristiansson (Swish) or Laura Thompson (Venmo)
               </li>
               <li className={classes.listItem}>
                 Once the payment is confirmed, the gift will be
@@ -526,9 +525,10 @@ const Gifts: React.FC = () => {
                   <br />
                   to 070-2069105
                   <br />
+                  <br />
                   <strong>Message:</strong>
                   <br />
-                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}. Your name: ...
                 </div>
               </div>
               
@@ -541,11 +541,12 @@ const Gifts: React.FC = () => {
                   <br />
                   {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.cost}
                   <br />
-                  to 070-2069105
+                  to @Laura-Thompson-39
+                  <br />
                   <br />
                   <strong>Message:</strong>
                   <br />
-                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}
+                  {giftsMapping.find((gift) => gift.id === isPopupOpen.id)?.name}. Your name: ...
                 </div>
               </div>
             </div>
