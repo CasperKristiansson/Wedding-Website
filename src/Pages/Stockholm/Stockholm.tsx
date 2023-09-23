@@ -239,10 +239,126 @@ const Stockholm: React.FC = () => {
               Dating from the 1200s and crammed with must-see sights, attractions, cafés, authentic restaurants, and boutique shops, the area of <strong>Gamla Stan (Old Town)</strong> is a living, breathing museum in its own right. It's often a first stop for tourists in Stockholm and is among the most <a href="https://www.planetware.com/tourist-attractions/sweden-s.html" target="_blank"> to visit in Sweden.</a>
             </p>
           </div>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/1.jpg"}
+              alt="Right Column"
+            />
+          </div>
+        </div>
+      </div>
+      <div className={classes.containerOurStory}>
+        <div className={`${classes.columnsContainer} ${classes.columnReversed}`}>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/2.jpg"}
+              alt="Right Column"
+            />
+          </div>
+          <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Take a Stroll and See the Sights of Djurgården
+          </div>
+          <p className={classes.loremText}>
+            A tranquil oasis in the heart of the city, the island of <strong>Djurgården</strong> draws crowds of tourists and locals alike. It's particularly busy during the summer months of long lazy days and short nights.
+            The park forms part of the <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/about-the-national-city-park.html" target="_blank">Royal National City Park</a>, which is the perfect place for a stroll and picnic, as well as being home to several of Stockholm's top museums and other attractions.
+            Scattered about are pleasant cafés, restaurants, snack bars, and hotels. You can rent bicycles to explore the forest trails or, if you're feeling adventurous, take to the waterways in a canoe. The popular <strong>Vasa Museum</strong> and <strong>ABBA the Museum</strong> are located here, as is the open-air museum <strong>Skansen</strong> and <strong>Gröna Lund</strong> amusement park.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div className={classes.containerOurStory}>
+        <div className={`${classes.columnsContainer}`}>
+          <div className={classes.leftColumn}>
+            <div className={classes.title}>Drottningholm Palace, Lovö</div>
+            <p className={classes.loremText}>
+            Fairy-tale <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/drottningholm-palace.html" target="_blank">Drottningholm Palace (Drottningholms slott)</a>, on the island of Lovö, is a <strong>UNESCO World Heritage Site</strong>. It lies about 11 kilometers west of Stockholm city center (45 minutes by ferry), making this <a href="https://www.planetware.com/sweden/stockholm-surroundings-s-upp-ssur.html" target="_blank">an excellent day trip from Stockholm</a>. Dating from the 17th century, the palace is now the official residence of the Swedish Royal Family.  
+            </p>
+          </div>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/3.jpg"}
+              alt="Right Column"
+            />
+          </div>
+        </div>
+      </div>
+      <div className={classes.containerOurStory}>
+        <div className={`${classes.columnsContainer} ${classes.columnReversed}`}>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/4.jpg"}
+              alt="Right Column"
+            />
+          </div>
+          <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Visit The Stockholm Wildlife Park and Museum, Skansen
+          </div>
+          <p className={classes.loremText}>
+            At Skansen, you can discover wild animals, Sweden’s history and find out how Swedes once lived according to the changing seasons, through the customs and traditions, work, celebrations and everyday life of times gone by.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div className={classes.containerOurStory}>
+        <div className={`${classes.columnsContainer}`}>
+          <div className={classes.leftColumn}>
+            <div className={classes.title}>Visit the Vasa Museum</div>
+            <p className={classes.loremText}>
+              The incredible Vasa battleship, the main attraction at Stockholm's brilliant <a href="https://www.vasamuseet.se/en" target="_blank">Vasa Museum (Vasamuseet)</a>, was intended to be the pride of the Swedish Imperial fleet. Yet, in a forerunner of the Titanic disaster centuries later, this majestic 64-gun vessel sank on its maiden voyage in 1628.
+            </p>
+          </div>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/5.jpg"}
+              alt="Right Column"
+            />
+          </div>
+        </div>
+      </div>
+      <div className={classes.containerOurStory}>
+        <div className={`${classes.columnsContainer} ${classes.columnReversed}`}>
+          <div className={classes.rightColumn}>
+            <img
+              className={classes.columnImage}
+              src={process.env.PUBLIC_URL + "assets/Stockholm/6.jpg"}
+              alt="Right Column"
+            />
+          </div>
+          <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Be a Star at ABBA The Museum
+          </div>
+          <p className={classes.loremText}>
+            Few pop bands from the 1970s can still garner the kind of enthusiasm among fans that Sweden's ABBA does. To celebrate the continuing interest in Scandinavia's biggest music export, <a href="https://abbathemuseum.com/en/" target="_blank">ABBA The Museum</a> opened in 2013 and has attracted young and old alike with its unique interactive exhibits.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div className={classes.containerOurStory}>
+      <div className={`${classes.columnsContainer}`}>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>Stockholm Boat Tour</div>
+          <p className={classes.loremText}>
+            The sea flows through the arteries of Stockholm, and during the summer months, the city is quite literally awash with boats of all shapes and sizes. Many city-dwellers own summer houses on the islands of the <strong>skärgården (archipelago)</strong> and spend, if not the entire summer there, then most weekends. It all makes for a Friday evening commute like no other.
+          </p>
+        </div>
         <div className={classes.rightColumn}>
           <img
             className={classes.columnImage}
-            src={process.env.PUBLIC_URL + "assets/Stockholm/1.jpg"}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/7.jpg"}
             alt="Right Column"
           />
         </div>
@@ -253,18 +369,54 @@ const Stockholm: React.FC = () => {
         <div className={classes.rightColumn}>
           <img
             className={classes.columnImage}
-            src={process.env.PUBLIC_URL + "assets/Stockholm/2.jpg"}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/8.jpg"}
             alt="Right Column"
           />
         </div>
         <div className={classes.leftColumn}>
           <div className={classes.title}>
-            Take a Stroll and See the Sights of Djurgården
+            Tour the Royal Palace (Sveriges Kungahus)
           </div>
           <p className={classes.loremText}>
-            A tranquil oasis in the heart of the city, the island of <strong>Djurgården</strong> draws crowds of tourists and locals alike. It's particularly busy during the summer months of long lazy days and short nights.
-            The park forms part of the <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/about-the-national-city-park.html" target="_blank">Royal National City Park</a>, which is the perfect place for a stroll and picnic, as well as being home to several of Stockholm's top museums and other attractions.
-            Scattered about are pleasant cafés, restaurants, snack bars, and hotels. You can rent bicycles to explore the forest trails or, if you're feeling adventurous, take to the waterways in a canoe. The popular <strong>Vasa Museum</strong> and <strong>ABBA the Museum</strong> are located here, as is the open-air museum <strong>Skansen</strong> and <strong>Gröna Lund</strong> amusement park.
+            A visit here could be a day out in itself. Located by the water's edge on the periphery of <strong>Gamla Stan</strong>, <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/the-royal-palace.html" target="_blank">Stockholm's Royal Palace (Sveriges Kungahus)</a> is the official residence of the King of Sweden.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div className={classes.containerOurStory}>
+      <div className={`${classes.columnsContainer}`}>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>See Historic Stockholm City Hall (Stadshuset)</div>
+          <p className={classes.loremText}>
+            Nestled at the water's edge and topped by three golden crowns, the City Hall (Stockholms stadshus, or Stadshuset) is one of Stockholm's most iconic buildings and stars in countless images and postcards of the city. Dating from 1923.
+          </p>
+        </div>
+        <div className={classes.rightColumn}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/9.jpg"}
+            alt="Right Column"
+          />
+        </div>
+      </div>
+    </div>
+    <div className={classes.containerOurStory}>
+      <div className={`${classes.columnsContainer} ${classes.columnReversed}`}>
+        <div className={classes.rightColumn}>
+          <img
+            className={classes.columnImage}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/10.jpg"}
+            alt="Right Column"
+          />
+        </div>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Take in the Perfect "SkyView"
+          </div>
+          <p className={classes.loremText}>
+            Situated on Stockholm's southern fringe, <a href="https://stockholmlive.com/en/skyview/" target="_blank">SkyView</a> takes you to the top of <strong>the world's largest spherical building</strong>, the Ericsson Globe, which is one of Stockholm's modern landmarks. From 130 meters above sea level, you'll be treated to an unforgettable view over the entire city.
           </p>
         </div>
       </div>
