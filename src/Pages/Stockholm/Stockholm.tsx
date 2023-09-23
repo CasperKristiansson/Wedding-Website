@@ -22,7 +22,7 @@ const useStyles = createUseStyles({
     textAlign: 'center',
     lineHeight: '0',
     background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%)',
-    padding: "20px 0"
+    padding: "20px 0",
   },
   heading: {
     fontSize: '55px',
@@ -48,277 +48,6 @@ const useStyles = createUseStyles({
       lineHeight: '1.2',
     },
   },
-  containerStory: {
-    position: 'relative',
-    width: '100%',
-  },
-  backgroundImage: {
-    width: '500px',
-    zIndex: 1,
-    position: 'absolute',
-    left: 0,
-    marginTop: -300,
-    '@media (max-width: 1300px)': {
-      left: '50%',
-      transform: 'translateX(-50%)',
-      marginTop: -420,
-    },
-  },
-  backgroundImageB: {
-    width: '900px',
-    zIndex: 1,
-    position: 'absolute',
-    left: -75,
-    marginTop: -200,
-    '@media (max-width: 1199px)': {
-      marginTop: -180,
-      left: '50%',
-      transform: 'translateX(-50%)',
-    },
-    '@media (max-width: 649px)': {
-      marginTop: -100,
-      width: "500px",
-    },
-  },
-  title: {
-    textAlign: 'center',
-    fontSize: '64px',
-    fontWeight: 'bold',
-    zIndex: 3,
-    fontFamily: "WindSong, cursive",
-  },
-  columnsContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '30px',
-    padding: '0 30px',
-    '@media (max-width: 1199px)': {
-      flexDirection: 'column',
-    }
-  },
-  leftColumn: {
-    flex: 1,
-    marginRight: '10px',
-    '@media (max-width: 1199px)': {
-      marginRight: 0,
-      marginTop: '20px',  // Adjust this to your preference
-      textAlign: 'center',
-    },
-  },
-  rightColumnBB: {
-    flex: 1,
-    marginLeft: '10px',
-    '@media (max-width: 1199px)': {
-      marginLeft: 0,
-      marginTop: '20px',  // Adjust this to your preference
-      textAlign: 'center',
-    },
-  },
-  rightColumn: {
-    flex: 1,
-    marginLeft: '10px',
-    display: 'flex',
-    justifyContent: 'center',
-    '@media (max-width: 1199px)': {
-      marginLeft: 0,
-      marginBottom: '20px',  // Adjust this to your preference
-      padding: "0px",  // Adjust padding as necessary
-    }
-  },
-  leftColumnB: {
-    flex: 1,
-    marginRight: '10px',
-    display: 'flex',
-    justifyContent: 'center',
-    '@media (max-width: 1199px)': {
-      marginRight: 0,
-      marginBottom: '20px',  // Adjust this to your preference
-      padding: "0px",  // Adjust padding as necessary
-    }
-  },
-  rightColumnB: {
-    flex: 1,
-    marginLeft: '10px',
-    display: 'flex',
-    justifyContent: 'center',
-    '@media (max-width: 1199px)': {
-      marginLeft: 0,
-      marginBottom: '20px',  // Adjust this to your preference
-      padding: "0px",  // Adjust padding as necessary
-      marginTop: '150px',  // Adjust this to your preference
-      position: 'relative',
-    }
-  },
-  loremText: {
-    fontSize: '26px',
-    padding: "0 40px",
-    '@media (max-width: 1199px)': {
-      padding: "0 20px",  // Adjust padding as necessary
-      // all li should be aligned left
-      '& li': {
-        textAlign: 'left',
-      }
-    },
-    '@media (max-width: 700px)': {
-      fontSize: '18px',
-      padding: "0px",  // Adjust padding as necessary
-    }
-  },
-  columnImage: {
-    width: '700px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    zIndex: 3,
-    '@media (max-width: 1199px)': {
-      maxWidth: '100%',  // Adjust the image size as needed
-    }
-  },
-  columnImageB: {
-    width: '700px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    zIndex: -1,
-    '@media (max-width: 1199px)': {
-      maxWidth: '100%',  // Adjust the image size as needed
-    }
-  },
-  containerLocation: {
-    height: 400,
-    marginTop: 0,
-    backgroundColor: '#B2BA99',
-    position: 'relative',
-    display: 'flex',
-    justifyContent: 'center',
-    textAlign: 'center',
-    lineHeight: 0.7,
-  },
-  leftImage: {
-    position: 'absolute',
-    top: 123,
-    left: 0,
-    transform: 'rotate(-90deg)',
-    width: 400,
-    marginLeft: -125,
-  },
-  rightImage: {
-    position: 'absolute',
-    top: 81,
-    right: 0,
-    transform: 'rotate(-90deg)',
-    width: 400,
-    marginRight: -81,
-  },
-  headingLocation: {
-    textAlign: 'center',
-    fontSize: '64px',
-    fontWeight: 'bold',
-    zIndex: 3,
-    fontFamily: "WindSong, cursive",
-    color: "white",
-    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-  },
-  subheadingLocation: {
-    fontSize: '35px',
-    color: '#fff',
-    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-    fontFamily: "'Cinzel', serif",
-  },
-  flowerContainerB: {
-    position: 'relative',
-    // less than 1200px width
-    '@media (max-width: 1199px)': {
-      position: 'absolute',
-    },
-  },
-  flowerContainer: {
-    position: 'relative',
-  },
-  containerOurStory: {
-    padding: '75px 0',
-    position: 'relative',
-  },
-  containerOurStoryB: {
-    padding: '75px 0',
-    position: 'relative',
-    '@media (max-width: 1199px)': {
-      display: 'none',
-    },
-  },
-  containerOurStoryE: {
-    padding: '75px 0',
-    marginTop: "150px",
-    position: 'relative',
-    '@media (min-width: 1199px)': {
-      display: 'none',
-    },
-  },
-  containerStockholm: {
-    position: 'relative',
-    height: 400,
-    marginBottom: -100,
-  },
-  imageStockholm: {
-    position: 'absolute',
-    height: 400,
-    left: "50%",
-    transform: "translateX(-50%)",
-    marginTop: -200,
-    maxHeight: '100%',
-    width: 'auto',
-  },
-  homeContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    padding: '20px',
-    paddingBottom: "100px"
-  },
-  titleAbout: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginBottom: '20px',
-  },
-  columnsContainerAbout: {
-    display: 'flex',
-    width: '60%',
-    margin: '0 auto',
-    '@media (max-width: 999px)': {
-      width: '100%',
-    },
-    '@media (max-width: 449px)': {
-      flexDirection: 'column',
-    },
-  },
-  column: {
-    flex: '1',
-    display: 'flex',
-    flexDirection: 'column',
-    '@media (max-width: 449px)': {
-      marginBottom: '20px',
-    },
-  },
-  middleColumn: {
-    flex: '0.5',
-    justifyContent: 'center',
-    alignItems: 'center',
-    '@media (max-width: 999px)': {
-      flex: '1',
-    },
-  },
-  imageAbout: {
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
-  whereTitle: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginTop: '20px',
-  },
-  address: {
-    fontSize: '22px',
-  },
   rsvpContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -326,32 +55,54 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     padding: '2rem 0',
   },
-  rsvpHeading: {
-    fontSize: '2rem',
+  titleB: {
+    textAlign: 'center',
+    fontSize: '50px',
     fontWeight: 'bold',
-    marginBottom: '1rem',
-    fontFamily: "'Cinzel', serif",
+    zIndex: 3,
+    fontFamily: "WindSong, cursive",
   },
   rsvpDate: {
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
     marginBottom: '2rem',
     width: '60%',
-    // less than 70px width
     '@media (max-width: 699px)': {
       width: '80%',
+      fontSize: '1rem',
     },
   },
-  rsvpLink: {
-    fontSize: '1.5rem',
-    textDecoration: 'none',
-    padding: '0.8rem 2.5rem',
-    border: '2px solid #333',
-    borderRadius: '8px',
-    color: '#333',
-    borderColor: '#B2BA99',
-    '&:hover': {
-      backgroundColor: '#B2BA99',
-      color: 'white',
+  title: {
+    textAlign: 'center',
+    fontSize: '32px',
+    fontWeight: 'bold',
+    zIndex: 3,
+    // less than 700px
+    '@media (max-width: 699px)': {
+      fontSize: '22px',
+      textAlign: 'left',
+    },
+  },
+  loremText: {
+    fontSize: '26px',
+    padding: "0 40px",
+    '@media (max-width: 1199px)': {
+      padding: "0 20px",
+      '& li': {
+        textAlign: 'left',
+      }
+    },
+    '@media (max-width: 700px)': {
+      fontSize: '14px',
+      padding: "0px",
+      textAlign: 'left',
+    }
+  },
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '2rem',
+    '@media (max-width: 1199px)': {
+      marginBottom: '20px',  // Adjust this to your preference
     }
   },
   button: {
@@ -369,211 +120,147 @@ const useStyles = createUseStyles({
       backgroundColor: '#97AA55',
     }
   },
-  buttonContainer: {
+  containerOurStoryB: {
+    padding: '25px 0',
+    position: 'relative',
+    '@media (max-width: 1199px)': {
+      display: 'none',
+    },
+  },
+  leftColumnB: {
+    flex: 1,
+    marginRight: '10px',
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '2rem',
     '@media (max-width: 1199px)': {
+      marginRight: 0,
       marginBottom: '20px',  // Adjust this to your preference
+      padding: "0px",  // Adjust padding as necessary
     }
   },
-  zIndex: {
+  rightColumnBB: {
+    flex: 1,
+    marginLeft: '10px',
+    '@media (max-width: 1199px)': {
+      marginLeft: 0,
+      textAlign: 'center',
+    },
+  },
+  containerOurStoryE: {
+    padding: '75px 0',
+    position: 'relative',
+    '@media (min-width: 1199px)': {
+      display: 'none',
+    },
+  },
+  containerOurStory: {
+    padding: '25px 0',
+    position: 'relative',
+  },
+  columnsContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '30px',
+    padding: '0 30px',
+    '@media (max-width: 1199px)': {
+      flexDirection: 'column',
+    }
+  },
+  columnReversed: {
+    flexDirection: 'column-reverse',
+    '@media (min-width: 1200px)': {
+      flexDirection: 'row',
+    }
+  },
+  leftColumn: {
+    flex: 1,
+    marginRight: '10px',
+    '@media (max-width: 1199px)': {
+      marginRight: 0,
+      textAlign: 'center',
+    },
+  },
+  rightColumn: {
+    flex: 1,
+    marginLeft: '10px',
+    display: 'flex',
+    justifyContent: 'center',
+    '@media (max-width: 1199px)': {
+      marginLeft: 0,
+      padding: "0px",
+    }
+  },
+  columnImage: {
+    width: '700px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     zIndex: 3,
-  }
+    '@media (max-width: 1199px)': {
+      maxWidth: '100%',
+    }
+  },
 });
 
-const Itinerary: React.FC = () => {
+const Stockholm: React.FC = () => {
   const classes = useStyles();
 
   return (
     <div style={{overflow: "hidden"}}>
       <div className={classes.container}>
         <img
-          src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-215 - Copy.jpg"}
+          src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-50.jpg"}
           alt="Wedding"
           className={classes.image}
         />
         <div className={classes.textContainer}>
-          <h2 className={classes.heading}>Itinerary</h2>
+          <h2 className={classes.heading}>Stockholm Tips</h2>
         </div>
       </div>
       <div className={classes.rsvpContainer}>
-        <p className={classes.rsvpDate}>The Wedding takes place on Saturday, June 29th. Before the wedding day there will be optional events open to whoever wants to join. Make sure to fill in the RSVP if interested in joining.</p>
+        <div className={classes.titleB}>Stockholm</div>
+        <p className={classes.rsvpDate}>
+          Stockholm, the capital city of Sweden, lies on a number of islands and peninsulas at the outflow of Lake Mälar into the Baltic.
+          This vibrant, modern city offers an astounding number of historic attractions, from architectural splendors like the Royal Palace to entire neighborhoods like Gamla Stan, Stockholm's Old Town district. If you want even more history, you can visit world-class museums like the Skansen Open-Air Museum or the Stockholm Medieval Museum, and if you're here for Vikings, the Vasa Museum should be at the top of your list of things to do. Stockholm is also home to excellent art galleries and other world-class museums, but if you want to spend more time outdoors, it offers both expansive parks and seemingly endless waterways and islands to explore. The Drottningholm Palace is just a ferry ride away, and the central location makes day trips from Stockholm easy. To learn more about the many tourist attractions and places to visit in Fanny’s hometown, be sure to read through our list of the best things to do in Stockholm below!
+        </p>
       </div>
+
+
       <div className={classes.containerOurStory}>
-        <div className={classes.title}>Our Story</div>
-        <div className={classes.columnsContainer}>
+        <div className={`${classes.columnsContainer}`}>
           <div className={classes.leftColumn}>
+            <div className={classes.title}>Explore the Old Town Stockholm: Gamla Stan</div>
             <p className={classes.loremText}>
-            Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in the Aegen Sea. Now we want to solidify our love Infront of our family and friends as we begin this new chapter of our lives together.
+              Dating from the 1200s and crammed with must-see sights, attractions, cafés, authentic restaurants, and boutique shops, the area of <strong>Gamla Stan (Old Town)</strong> is a living, breathing museum in its own right. It's often a first stop for tourists in Stockholm and is among the most <a href="https://www.planetware.com/tourist-attractions/sweden-s.html" target="_blank"> to visit in Sweden.</a>
             </p>
-            <div className={classes.buttonContainer}>
-              <Link to="/our-story">
-                <button className={classes.button}>
-                  More About Us
-                </button>
-              </Link>
-            </div>
           </div>
         <div className={classes.rightColumn}>
           <img
             className={classes.columnImage}
-            src={process.env.PUBLIC_URL + "assets/Wedding Images/07. 02. 2023-215.jpg"}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/1.jpg"}
             alt="Right Column"
           />
         </div>
-      </div>
-    </div>
-    <div className={classes.containerLocation}>
-      <img src={process.env.PUBLIC_URL + "assets/External/1.png"} alt="Left" className={classes.leftImage} />
-      <img src={process.env.PUBLIC_URL + "assets/External/2.png"} alt="Right" className={classes.rightImage} />
-      <div className={classes.zIndex}>
-        <h1 className={classes.headingLocation}>Location</h1>
-        <p className={classes.subheadingLocation}>Stockholm, Sweden</p>
-      </div>
-    </div>
-    <div className={classes.containerStockholm}>
-      <img
-        src={process.env.PUBLIC_URL + "assets/External/stockholm.png"}
-        alt="Stockholm"
-        className={classes.imageStockholm}
-      />
-    </div>
-    <div className={classes.homeContainer}>
-      <div className={classes.title}>The Wedding Day</div>
-      <div className={classes.columnsContainerAbout}>
-        <div className={classes.column}>
-          <div className={classes.whereTitle}>When</div>
-          <div className={classes.address}>Saturday, June 29th, 2024</div>
-          <div className={classes.address}>Ceremony: 3PM</div>
-          <div className={classes.address}>Reception: 5PM</div>
-        </div>
-        <div className={`${classes.column} ${classes.middleColumn}`}>
-          <img
-            className={classes.imageAbout}
-            src={process.env.PUBLIC_URL + "assets/External/3.png"}
-            alt="Background"
-          />
-        </div>
-        <div className={classes.column}>
-          <div className={classes.whereTitle}>Where</div>
-          <div className={classes.address}>Sånga Kyrka</div>
-          <div className={classes.address}>Sånga Prästgårds Väg 1, 179 96 Sånga, SWEDEN</div>
-        </div>
-      </div>
-      <div className={classes.buttonContainer}>
-        <Link to="/stockholm-tips">
-          <button className={classes.button}>
-            Tips for things to do in Stockholm
-          </button>
-        </Link>
       </div>
     </div>
     <div className={classes.containerOurStory}>
-      <div className={classes.title}>
-        Wedding Day Itinerary
-      </div>
-      <div className={classes.columnsContainer}>
-        <div className={classes.leftColumn}>
-          <div className={classes.loremText}>
-            The wedding day will begin with a cermony at Sanga Kyrka, and then a reception at Ekebyhovs Slott. Björkuddsvägen 107, 178 34 Ekerö
-            <br />
-            <br />
-            Before the wedding day there will be optional events open to whoever wants to join. After the wedding there will be coffee and small bites at Kristiansson’s for gift opening. Make sure to fill in the RSVP if interested in joining. 
-            <br />
-            <br />
-            <u>Optional Events Before the Wedding</u>
-            <ul>
-              <li>
-                Walking tour and rooftop bar guide with Fanny and Nate – Monday 24th 
-              </li>
-              <li>
-                Day Cruise in Achapelago’s – Tuesday 25th 
-              </li>
-              <li>
-                BBQ at Kristiansson’s House – Thursday 27th
-              </li>
-            </ul>
-            <u>Optional Events After the Wedding</u>
-            <ul>
-              <li>
-                Gift Opening and Coffee – Sunday 30th
-              </li>
-            </ul>
-          </div>
-          <div className={classes.buttonContainer}>
-            <Link to="/itinerary">
-              <button className={classes.button}>
-                Itinerary
-              </button>
-            </Link>
-          </div>
-        </div>
-      <div className={classes.rightColumnB}>
-        <div className={classes.flowerContainerB}>
-          <img
-            className={classes.backgroundImageB}
-            src={process.env.PUBLIC_URL + "assets/External/3.png"}
-            alt="Background"
-          />
-        </div>
-        <img
-          className={classes.columnImageB}
-          src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture1.jpg"}
-          alt="Right Column"
-        />
-      </div>
-      </div>
-    </div>
-    <div className={classes.containerOurStoryB}>
-      <div className={classes.columnsContainer}>
-        <div className={classes.leftColumnB}>
-          <img
-            className={classes.columnImage}
-            src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture2.jpg"}
-            alt="Right Column"
-          />
-        </div>
-        <div className={classes.rightColumnBB}>
-          <div className={classes.title}>
-            Gift - Registry
-          </div>
-          <p className={classes.loremText}>
-            Not sure what to get us for wedding gift? We are planning a trip to New Zealand for our Honeymoon and would love your contribution to make it extra special 
-          </p>
-          <div className={classes.buttonContainer}>
-            <Link to="/gifts">
-              <button className={classes.button}>
-                Registry
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className={classes.containerOurStoryE}>
-      <div className={classes.columnsContainer}>
-        <div className={classes.leftColumn}>
-          <div className={classes.title}>
-            Gift - Registry
-          </div>
-          <p className={classes.loremText}>
-            Not sure what to get us for wedding gift? We are planning a trip to New Zealand for our Honeymoon and would love your contribution to make it extra special 
-          </p>
-          <div className={classes.buttonContainer}>
-            <Link to="/gifts">
-              <button className={classes.button}>
-                Registry
-              </button>
-            </Link>
-          </div>
-        </div>
+      <div className={`${classes.columnsContainer} ${classes.columnReversed}`}>
         <div className={classes.rightColumn}>
           <img
             className={classes.columnImage}
-            src={process.env.PUBLIC_URL + "assets/Wedding Images/Picture2.jpg"}
+            src={process.env.PUBLIC_URL + "assets/Stockholm/2.jpg"}
             alt="Right Column"
           />
+        </div>
+        <div className={classes.leftColumn}>
+          <div className={classes.title}>
+            Take a Stroll and See the Sights of Djurgården
+          </div>
+          <p className={classes.loremText}>
+            A tranquil oasis in the heart of the city, the island of <strong>Djurgården</strong> draws crowds of tourists and locals alike. It's particularly busy during the summer months of long lazy days and short nights.
+            The park forms part of the <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/about-the-national-city-park.html" target="_blank">Royal National City Park</a>, which is the perfect place for a stroll and picnic, as well as being home to several of Stockholm's top museums and other attractions.
+            Scattered about are pleasant cafés, restaurants, snack bars, and hotels. You can rent bicycles to explore the forest trails or, if you're feeling adventurous, take to the waterways in a canoe. The popular <strong>Vasa Museum</strong> and <strong>ABBA the Museum</strong> are located here, as is the open-air museum <strong>Skansen</strong> and <strong>Gröna Lund</strong> amusement park.
+          </p>
         </div>
       </div>
     </div>
@@ -581,4 +268,4 @@ const Itinerary: React.FC = () => {
   );
 };
 
-export default Itinerary;
+export default Stockholm;
