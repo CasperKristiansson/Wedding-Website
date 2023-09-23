@@ -87,13 +87,13 @@ const WeddingDay: React.FC = () => {
           date="Saturday, June 29th 3:00pm"
           contentStyle={{ background: '#C1C69D', color: '#fff' }}
           iconStyle={{ background: '#C1C69D' }}
-          icon={Icon(danceImage)}
+          icon={Icon(process.env.PUBLIC_URL + "assets/External/rings.png")}
         >
           <h3 className="vertical-timeline-element-title">Ceremony</h3>
           <h4 className="vertical-timeline-element-subtitle">SÅNGA KYRKA</h4>
           <p>
-            The Ceremony will start at 3pm at SÅNGA KYRKA. Afterwards there will be photo and celebration before we head towards the reception. 
-            SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN
+            The Ceremony will start at 3pm at Sånga Kyrka. Afterwards there will be photo and celebration before we head towards the reception. 
+            Sånga Prästgårds Väg 1, 179 96 Sånga, SWEDEN
             <a
               className={classes.googleMapsLink}
               href={"https://www.google.com/maps/place/S%C3%A5nga+Pr%C3%A4stg%C3%A5rds+v%C3%A4g+1,+179+96+Svartsj%C3%B6/@59.3580725,17.7051112,17z/data=!3m1!4b1!4m6!3m5!1s0x465f0a61c1bf73c5:0x9a9ab65e363fabbd!8m2!3d59.3580725!4d17.7076861!16s%2Fg%2F11kqnh6v7t?entry=ttu"}
@@ -129,15 +129,15 @@ const WeddingDay: React.FC = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
-          date="Sunday, June 30th 2pm"
+          date="Sunday, June 30th 2:00pm"
           contentStyle={{ background: '#C1C69D', color: '#fff' }}
           iconStyle={{ background: '#C1C69D' }}
-          icon={Icon(danceImage)}
+          icon={Icon(process.env.PUBLIC_URL + "assets/External/gift.png")}
         >
           <h3 className="vertical-timeline-element-title">Gift Opening</h3>
           <h4 className="vertical-timeline-element-subtitle">Kristiansson’s Home</h4>
           <p>
-            The day after the wedding we will have coffee and small bites at Kristiansson’s home for those who are able to attend. Fanny and Nathaniel will open the wedding gifts that you all got them Glaedjevaegne 29, 16575 Haesselby, Sweden
+            The day after the wedding we will have coffee and small bites at Kristiansson’s home for those who are able to attend. Fanny and Nathaniel will open the wedding gifts that you all got them Glädjevägen 29, 16575 Hässelby, Sweden
             <a
               className={classes.googleMapsLink}
               href={"https://www.google.com/maps/place/Gl%C3%A4djev%C3%A4gen+29,+165+75+H%C3%A4sselby/@59.3838393,17.802766,17z/data=!3m1!4b1!4m6!3m5!1s0x465fa01ef7841cad:0x3edbaea69aa6f89!8m2!3d59.3838393!4d17.8053409!16s%2Fg%2F11c4n2_cgp?entry=ttu"}

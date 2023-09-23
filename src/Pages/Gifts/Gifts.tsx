@@ -388,19 +388,19 @@ const Gifts: React.FC = () => {
                 button to reserve the gift.
               </li>
               <li className={classes.listItem}>
-                You then have three payment options; Paypal,
+                You then have two payment options;
                 Swish or Venmo. Send an email to
                 casper.kristiansson@yahoo.se with payment
                 confirmation (phone number/email address and
                 names sent with the payment) Keep in mind that
                 the person you are sending the money to is
-                either Casper Kristiansson (Swish) or Laura Thompson (Venmo)
+                either Casper Kristiansson (Swish) or Laura Thompson (Venmo). (If you want to pay in any other way, please reach out to Casper)
               </li>
               <li className={classes.listItem}>
                 Once the payment is confirmed, the gift will be
                 marked as reserved and you will receive a
                 confirmation email. (This is a manual process,
-                so it might take up to 24 hours)
+                so it might take up to 48 hours)
               </li>
             </ol>
           </div>

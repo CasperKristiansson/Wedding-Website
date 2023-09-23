@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 
 const faqData = [
   { question: 'When is the wedding?', answer: 'Ceremony and reception is on Saturday June 29th starting at 3pm' },
-  { question: 'Where is the wedding?', answer: 'The ceremony is at Sanga Kyrka: SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN' },
+  { question: 'Where is the wedding?', answer: 'The ceremony is at Sanga Kyrka: Sånga Prästgårds Väg 1, 179 96 Sånga, SWEDEN' },
   { question: "Do I need a passport to enter Sweden?", answer: "Yes. you need a passport to enter Sweden"},
   { question: "Do I need a VISA to enter Sweden?", answer: "Yes, U.S. citizens will soon need to register with the European Travel and Information System, ETIAS, to enter Sweden. ETIAS will be operational from 2024. The ETIAS requirements for Americans traveling to Sweden are explained this page: ETIAS for Sweden for US Citizens | ETIASEU.com"},
   { question: "What is the dress code?", answer: 'The dresscode is black tie optional. Black-tie optional means that you have the option of wearing your most formal attire (think: an evening gown or tuxedo) but can also choose to wear a formal suit or cocktail dress instead. Basically, you have some flexibility to play with your fit. You can either go full-on glam in black-tie-worthy attire or opt for a slightly more relaxed but still formal ensemble. Men: Suit or tuxedo (no white or green suit, but a white dress shirt is fine). Women: evening gown or cocktail dress (no green or white dress)'},

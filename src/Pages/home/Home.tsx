@@ -68,7 +68,7 @@ const Home: React.FC = () => {
       width: '900px',
       zIndex: 1,
       position: 'absolute',
-      left: 0,
+      left: -75,
       marginTop: -200,
       '@media (max-width: 1199px)': {
         marginTop: -180,
@@ -178,7 +178,7 @@ const Home: React.FC = () => {
       width: '700px',
       marginLeft: 'auto',
       marginRight: 'auto',
-      zIndex: 3,
+      zIndex: -1,
       '@media (max-width: 1199px)': {
         maxWidth: '100%',  // Adjust the image size as needed
       }
@@ -461,8 +461,8 @@ const Home: React.FC = () => {
         </div>
         <div className={classes.column}>
           <div className={classes.whereTitle}>Where</div>
-          <div className={classes.address}>SÅNGA KYRKA</div>
-          <div className={classes.address}>SÅNGA PRÄSTGÅRDS VÄG 1, 179 96 SÅNGA, SWEDEN</div>
+          <div className={classes.address}>Sånga Kyrka</div>
+          <div className={classes.address}>Sånga Prästgårds Väg 1, 179 96 Sånga, SWEDEN</div>
         </div>
       </div>
       <div className={classes.buttonContainer}>
@@ -480,7 +480,7 @@ const Home: React.FC = () => {
       <div className={classes.columnsContainer}>
         <div className={classes.leftColumn}>
           <div className={classes.loremText}>
-            The wedding day will begin with a cermony at Sanga Kyrka, and then a reception at Ekebyhovs Slott. BJÖRKUDDSVÄGEN 107, 178 34 EKERÖ
+            The wedding day will begin with a cermony at Sanga Kyrka, and then a reception at Ekebyhovs Slott. Björkuddsvägen 107, 178 34 Ekerö
             <br />
             <br />
             Before the wedding day there will be optional events open to whoever wants to join. After the wedding there will be coffee and small bites at Kristiansson’s for gift opening. Make sure to fill in the RSVP if interested in joining. 

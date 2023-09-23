@@ -24,11 +24,18 @@ export const giftsMapping = [
     image: process.env.PUBLIC_URL + "assets/Gifts/3.jpg",
   },
   {
+    id: 22,
+    name: "Hotel night in Queenstown",
+    description: "We fly back to the States from Queenstown and want to spend our last night in a hotel before our flight departs.",
+    cost: "120USD",
+    image: process.env.PUBLIC_URL + "assets/Gifts/22.jpg",
+  },
+  {
     id: 4,
     name: "Blackwater rafting in Waitomo Caves",
     description:
       "New Zealand’s maximum-adrenaline Black Water Rafting tour. we will  abseil to the depths of the earth, zip line through a glow worm studded cave, climb underground waterfalls and tube through fast-flowing waters.",
-    cost: "150USD per person (300 for fanny and nate)",
+    cost: "150USD per person (300 for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/4.jpg",
   },
   {
@@ -44,7 +51,7 @@ export const giftsMapping = [
     name: "Lake Tapo boat tour craving",
     description:
       "On board a charter yacht, the Kindred Spirit, sail on Lake Taupo, admiring the mountain views. Sail to the Maori Rock Carvings, which can only be seen from the water. If the weather’s good you can swim, or simply sit on the deck and relax with a blanket to keep you warm.",
-    cost: "35USD per person (70USD for fanny and nate)",
+    cost: "35USD per person (70USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/6.jpg",
   },
   {
@@ -52,7 +59,7 @@ export const giftsMapping = [
     name: "Warekri terras and Thermal spa",
     description:
       "The regions only geothermal and silica bathing experience At Wairakei Terraces, our pools draw their healing properties from silica terraces and geothermal water flow from 1.5 kilometres underground delivering an unbeatable combination of geothermal and mineral water. Immerse yourself in the mineral rich, hot thermal pools, at the bottom of silica terraces and instantly feel the silky smoothness on your skin and the warmth across your body. ​ Let the days worries drift away and be replaced with the luxurious embrace of natural heat.",
-    cost: "27USD per person (54USD for fanny and nate",
+    cost: "27USD per person (54USD for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/7.jpg",
   },
   {
@@ -60,7 +67,7 @@ export const giftsMapping = [
     name: "Abel Tasman national park (cruise and hiking exkursion)",
     description:
       "Discover the jewel in the crown of New Zealand’s South Island on this full-day Abel Tasman National Park hiking tour with cruise. Travel from Nelson to Kaiteriteri with your guide, then hop aboard your water taxi. Cruise the azure-blue seas toward the heart of Abel Tasman National Park and the start-point of your trek. Follow hiking trails through the dense forest and listen as your guide points out medicinal and edible plants along the way. Gain insight into native Maori and Dutch settlers’ heritage, and enjoy lunch on Torrent Beach",
-    cost: "70USD per person (120USD for fanny and nate)",
+    cost: "70USD per person (120USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/8.jpg",
   },
   {
@@ -68,7 +75,7 @@ export const giftsMapping = [
     name: "Bike and wine: Marlborough wine region",
     description:
       "Marlborough wine region is located in the north of the South Island of New Zealand. It's well known for its winemaking industry, and for the Marlborough Sounds, an extensive network of coastal waterways, peninsulas, and islands. Early settlers in Marlborough planted vines as early as the 1870s. One day bike rental for Fanny and Nate to bike from winery to wienry adn dsicover this beautiful region.  Based at the Vines Village there are over a dozen wineries, 3km of your starting point. Bike Hire includes a bike, helmet, a bike lock, map.",
-    cost: "35USD per person, 70usd for fanny and nate",
+    cost: "35USD per person, 70usd for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/9.jpg",
   },
   {
@@ -97,7 +104,7 @@ export const giftsMapping = [
   },
   {
     id: 13,
-    name: "Helikopter to Tasman Glacier and Hike",
+    name: "Helicopter to Tasman Glacier and Hike",
     description:
       "Nate, a pilot, has actually never flown an helicpter! Combine the excitement of walking on New Zealand’s biggest glacier, the Tasman Glacier, with the thrill of breathtaking scenic helicopter flight and spectacular views of New Zealand’s highest mountain, Aoraki Mt Cook. You will fly in to your drop off point on a remote part of the glacier. Once your crampons or snowshoes are fitted you’ll go exploring the amazing ice formations, following your guide as they cut steps in the glacier, using skills handed down from NZ’s mountain pioneers.",
     cost: "400USD per person (800USD for Fanny and Nate)",
@@ -113,9 +120,9 @@ export const giftsMapping = [
   },
   {
     id: 15,
-    name: "Bungy jumping Queenstown",
+    name: "Bungee jumping Queenstown",
     description:
-      "Fanny has always dreamed about going bungy jumping. Nate will take all the pictures and videos of her doing it. Nevis bungy is a 134m bungy (the highest in New Zealand). It’s 8.5 seconds in a blitz of pure fear and adrenaline. ",
+      "Fanny has always dreamed about going bungee jumping. Nate will take all the pictures and videos of her doing it. Nevis bungee is a 134m bungee (the highest in New Zealand). It’s 8.5 seconds in a blitz of pure fear and adrenaline. ",
     cost: "170USD for Fanny",
     image: process.env.PUBLIC_URL + "assets/Gifts/15.jpg",
   },
@@ -123,7 +130,7 @@ export const giftsMapping = [
     id: 16,
     name: "Queenstown mountain biking",
     description:
-      "The Skyline Gondola takes the hard work out of mountain biking by depositing riders and bikes almost 500 metres above central Queenstown. After the super-scenic, six-minute ride up, the downhill options are mind-boggling, with 28 world-class trails crisscrossing the southern flanks of Bob’s Peak. As befitting one of the world’s most popular adrenaline sport resorts, the 30+ km trail network winds, drops, swoops and flies through exotic and regenerating native forest with eye-popping views across Lake Wakatipu to the jagged Remarkables and Cecil Peak. Day Bike rental for Fanny and Nate",
+      "The Skyline Gondola takes the hard work out of mountain biking by depositing riders and bikes almost 500 metres above central Queenstown. After the super-scenic, six-minute ride up, the downhill options are mind-boggling, with 28 world-class trails crisscrossing the southern flanks of Bob’s Peak. As befitting one of the world’s most popular adrenaline sport resorts, the 30+ km trail network winds, drops, swoops and flies through exotic and regenerating native forest with eye-popping views across Lake Wakatipu to the jagged Remarkable and Cecil Peak. Day Bike rental for Fanny and Nate",
     cost: "70USD for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/16.jpg",
   },
@@ -132,7 +139,7 @@ export const giftsMapping = [
     name: "Queenstown skyline gondola and hike",
     description:
       "Take a scenic ride in the iconic Skyline Gondola and take in the stunning views as you ride the steepest cable car lift in the Southern Hemisphere! You’ll be carried 480 metres above Queenstown and Lake Wakatipu to the top of Bob's Peak, where you’ll enjoy a spectacular 220-degree panorama with breath-taking views of Coronet Peak, The Remarkables, Walter and Cecil Peak and, of course, Queenstown. When you get to the top, enjoy the spectacular views while having a drink from the Bar, take a few rides on the thrilling Luge (once is never enough), refuel with a sumptuous buffet lunch or dinner at Stratosfare Restaurant. There's more to enjoy!",
-    cost: "40 SUD per person and 80USD for fanny and Nate",
+    cost: "40 SUD per person and 80USD for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/17.jpg",
   },
   {
@@ -140,36 +147,29 @@ export const giftsMapping = [
     name: "Quuenstown Skyline Luge",
     description:
       "At the top of queenstown, after taking the gonodla, there is the gravity-fuelled Skyline Luge, the global thrill ride.  Luge carts puts us in complete control as you take on over 1,600 metres of banked corners, tunnels and dippersall the way down to the city",
-    cost: "42 Usd per person and 84SUD for fanny and nate",
+    cost: "42 Usd per person and 84SUD for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/18.jpg",
   },
   {
     id: 19,
     name: "Romantic dinner for 2",
     description:
-      "A romantic dinenr for two along our trip from north to south island in New Zealand. Let us splurge at a nice resturant inbetween the campsite and roadtrip food. Auckland, Queenstown, or any small towns we pass have delciosus and special dinner experiences we would love to try out",
+      "A romantic dinner for two along our trip from north to south island in New Zealand. Let us splurge at a nice restaurant between the campsite and road trip food. Auckland, Queenstown, or any small towns we pass have delicious and special dinner experiences we would love to try out",
     cost: "60USD for dinner for two",
     image: process.env.PUBLIC_URL + "assets/Gifts/19.jpg",
   },
   {
     id: 20,
     name: "Nate’s beer fund",
-    description: "",
-    cost: "open",
+    description: "Help fund Nate's beer fund as he travels through New Zealand and discover brewery after brewery.",
+    cost: "Open",
     image: process.env.PUBLIC_URL + "assets/Gifts/20.jpg",
   },
   {
     id: 21,
     name: "Fanny’s wine fund",
-    description: "",
-    cost: "",
+    description: "Help fund Fanny's wine fund as she travels through New Zealand and discover winery after winery",
+    cost: "Open",
     image: process.env.PUBLIC_URL + "assets/Gifts/21.jpg",
-  },
-  {
-    id: 22,
-    name: "Hotel night in Queenstown",
-    description: "",
-    cost: "",
-    image: process.env.PUBLIC_URL + "assets/Gifts/22.jpg",
   },
 ];
