@@ -73,7 +73,7 @@ const useStyles = createUseStyles({
   },
   title: {
     textAlign: 'center',
-    fontSize: '32px',
+    fontSize: '28px',
     fontWeight: 'bold',
     zIndex: 3,
     // less than 700px
@@ -81,9 +81,12 @@ const useStyles = createUseStyles({
       fontSize: '22px',
       textAlign: 'left',
     },
+    '@media (max-width: 1400px)': {
+      fontSize: '22px',
+    },
   },
   loremText: {
-    fontSize: '26px',
+    fontSize: '18px',
     padding: "0 40px",
     '@media (max-width: 1199px)': {
       padding: "0 20px",
@@ -91,11 +94,13 @@ const useStyles = createUseStyles({
         textAlign: 'left',
       }
     },
-    '@media (max-width: 700px)': {
+    '@media (max-width: 1400px)': {
       fontSize: '14px',
-      padding: "0px",
       textAlign: 'left',
-    }
+    },
+    '@media (max-width: 700px)': {
+      padding: 0,
+    },
   },
   buttonContainer: {
     display: 'flex',
