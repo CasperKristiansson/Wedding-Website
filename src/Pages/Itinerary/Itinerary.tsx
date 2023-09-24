@@ -55,6 +55,14 @@ const useStyles = createUseStyles({
       width: '80%',
     },
   },
+  googleMapsLink: {
+    fontSize: '14px',
+    color: '#007bff',
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 });
 
 const Itinerary: React.FC = () => {
@@ -127,7 +135,7 @@ const Itinerary: React.FC = () => {
         >
           <h3 className="vertical-timeline-element-title">Wedding Day</h3>
           <p>
-            Read more about the wedding day here
+            Read more about the wedding day here <a href="/wedding-day" className={classes.googleMapsLink}>Wedding Day</a>.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

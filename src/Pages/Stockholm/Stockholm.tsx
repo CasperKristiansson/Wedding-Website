@@ -1,6 +1,5 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { Link } from 'react-router-dom';
 
 const useStyles = createUseStyles({
   container: {
@@ -236,7 +235,7 @@ const Stockholm: React.FC = () => {
           <div className={classes.leftColumn}>
             <div className={classes.title}>Explore the Old Town Stockholm: Gamla Stan</div>
             <p className={classes.loremText}>
-              Dating from the 1200s and crammed with must-see sights, attractions, cafés, authentic restaurants, and boutique shops, the area of <strong>Gamla Stan (Old Town)</strong> is a living, breathing museum in its own right. It's often a first stop for tourists in Stockholm and is among the most <a href="https://www.planetware.com/tourist-attractions/sweden-s.html" target="_blank"> to visit in Sweden.</a>
+              Dating from the 1200s and crammed with must-see sights, attractions, cafés, authentic restaurants, and boutique shops, the area of <strong>Gamla Stan (Old Town)</strong> is a living, breathing museum in its own right. It's often a first stop for tourists in Stockholm and is among the most <a rel="noreferrer" href="https://www.planetware.com/tourist-attractions/sweden-s.html" target="_blank"> to visit in Sweden.</a>
             </p>
           </div>
           <div className={classes.rightColumn}>
@@ -263,7 +262,7 @@ const Stockholm: React.FC = () => {
           </div>
           <p className={classes.loremText}>
             A tranquil oasis in the heart of the city, the island of <strong>Djurgården</strong> draws crowds of tourists and locals alike. It's particularly busy during the summer months of long lazy days and short nights.
-            The park forms part of the <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/about-the-national-city-park.html" target="_blank">Royal National City Park</a>, which is the perfect place for a stroll and picnic, as well as being home to several of Stockholm's top museums and other attractions.
+            The park forms part of the <a rel="noreferrer" href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/royal-national-city-park/about-the-national-city-park.html" target="_blank">Royal National City Park</a>, which is the perfect place for a stroll and picnic, as well as being home to several of Stockholm's top museums and other attractions.
             Scattered about are pleasant cafés, restaurants, snack bars, and hotels. You can rent bicycles to explore the forest trails or, if you're feeling adventurous, take to the waterways in a canoe. The popular <strong>Vasa Museum</strong> and <strong>ABBA the Museum</strong> are located here, as is the open-air museum <strong>Skansen</strong> and <strong>Gröna Lund</strong> amusement park.
           </p>
         </div>
@@ -276,7 +275,7 @@ const Stockholm: React.FC = () => {
           <div className={classes.leftColumn}>
             <div className={classes.title}>Drottningholm Palace, Lovö</div>
             <p className={classes.loremText}>
-            Fairy-tale <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/drottningholm-palace.html" target="_blank">Drottningholm Palace (Drottningholms slott)</a>, on the island of Lovö, is a <strong>UNESCO World Heritage Site</strong>. It lies about 11 kilometers west of Stockholm city center (45 minutes by ferry), making this <a href="https://www.planetware.com/sweden/stockholm-surroundings-s-upp-ssur.html" target="_blank">an excellent day trip from Stockholm</a>. Dating from the 17th century, the palace is now the official residence of the Swedish Royal Family.  
+            Fairy-tale <a rel="noreferrer" href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/drottningholm-palace.html" target="_blank">Drottningholm Palace (Drottningholms slott)</a>, on the island of Lovö, is a <strong>UNESCO World Heritage Site</strong>. It lies about 11 kilometers west of Stockholm city center (45 minutes by ferry), making this <a rel="noreferrer" href="https://www.planetware.com/sweden/stockholm-surroundings-s-upp-ssur.html" target="_blank">an excellent day trip from Stockholm</a>. Dating from the 17th century, the palace is now the official residence of the Swedish Royal Family.  
             </p>
           </div>
           <div className={classes.rightColumn}>
@@ -314,7 +313,7 @@ const Stockholm: React.FC = () => {
           <div className={classes.leftColumn}>
             <div className={classes.title}>Visit the Vasa Museum</div>
             <p className={classes.loremText}>
-              The incredible Vasa battleship, the main attraction at Stockholm's brilliant <a href="https://www.vasamuseet.se/en" target="_blank">Vasa Museum (Vasamuseet)</a>, was intended to be the pride of the Swedish Imperial fleet. Yet, in a forerunner of the Titanic disaster centuries later, this majestic 64-gun vessel sank on its maiden voyage in 1628.
+              The incredible Vasa battleship, the main attraction at Stockholm's brilliant <a rel="noreferrer" href="https://www.vasamuseet.se/en" target="_blank">Vasa Museum (Vasamuseet)</a>, was intended to be the pride of the Swedish Imperial fleet. Yet, in a forerunner of the Titanic disaster centuries later, this majestic 64-gun vessel sank on its maiden voyage in 1628.
             </p>
           </div>
           <div className={classes.rightColumn}>
@@ -340,7 +339,7 @@ const Stockholm: React.FC = () => {
             Be a Star at ABBA The Museum
           </div>
           <p className={classes.loremText}>
-            Few pop bands from the 1970s can still garner the kind of enthusiasm among fans that Sweden's ABBA does. To celebrate the continuing interest in Scandinavia's biggest music export, <a href="https://abbathemuseum.com/en/" target="_blank">ABBA The Museum</a> opened in 2013 and has attracted young and old alike with its unique interactive exhibits.
+            Few pop bands from the 1970s can still garner the kind of enthusiasm among fans that Sweden's ABBA does. To celebrate the continuing interest in Scandinavia's biggest music export, <a rel="noreferrer" href="https://abbathemuseum.com/en/" target="_blank">ABBA The Museum</a> opened in 2013 and has attracted young and old alike with its unique interactive exhibits.
           </p>
         </div>
       </div>
@@ -378,7 +377,7 @@ const Stockholm: React.FC = () => {
             Tour the Royal Palace (Sveriges Kungahus)
           </div>
           <p className={classes.loremText}>
-            A visit here could be a day out in itself. Located by the water's edge on the periphery of <strong>Gamla Stan</strong>, <a href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/the-royal-palace.html" target="_blank">Stockholm's Royal Palace (Sveriges Kungahus)</a> is the official residence of the King of Sweden.
+            A visit here could be a day out in itself. Located by the water's edge on the periphery of <strong>Gamla Stan</strong>, <a rel="noreferrer" href="https://www.kungligaslotten.se/english/royal-palaces-and-sites/the-royal-palace.html" target="_blank">Stockholm's Royal Palace (Sveriges Kungahus)</a> is the official residence of the King of Sweden.
           </p>
         </div>
       </div>
@@ -416,7 +415,7 @@ const Stockholm: React.FC = () => {
             Take in the Perfect "SkyView"
           </div>
           <p className={classes.loremText}>
-            Situated on Stockholm's southern fringe, <a href="https://stockholmlive.com/en/skyview/" target="_blank">SkyView</a> takes you to the top of <strong>the world's largest spherical building</strong>, the Ericsson Globe, which is one of Stockholm's modern landmarks. From 130 meters above sea level, you'll be treated to an unforgettable view over the entire city.
+            Situated on Stockholm's southern fringe, <a rel="noreferrer" href="https://stockholmlive.com/en/skyview/" target="_blank">SkyView</a> takes you to the top of <strong>the world's largest spherical building</strong>, the Ericsson Globe, which is one of Stockholm's modern landmarks. From 130 meters above sea level, you'll be treated to an unforgettable view over the entire city.
           </p>
         </div>
       </div>
