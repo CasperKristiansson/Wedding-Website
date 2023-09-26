@@ -43,7 +43,7 @@ export const giftsMapping = [
     name: "KAITUNA RIVER WHITE WATER RAFTING IN ROTORUA NEW ZEALAND",
     description:
       "Experience the adrenaline of white water rafting on Kaituna River! Raft the highest commercially rafted waterfall in the world! The Kaituna River is Rotorua Rafting’s playground, with an all-Kiwi crew and home to not just one, but three impressive waterfalls, including the highest rafted waterfall in the world – Tutea Falls at 7m, Okere Falls and Kaituna Falls. There is no denying that there is something amazing about this trip! The Kaituna river has been ranked as the best white water rafting in the world due to the kind nature of the river mixed with hair-raising waterfalls. It enables us to provide a tailored rafting tour to match your adrenalin needs, whether it’s rafting your grandma or a full-blown adrenalin junkie. We will give them the trip they desire.",
-    cost: "60USD per person (120USD for Fanny and Nate",
+    cost: "60USD per person (120USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/5.jpg",
   },
   {
@@ -59,7 +59,7 @@ export const giftsMapping = [
     name: "Warekri terras and Thermal spa",
     description:
       "The regions only geothermal and silica bathing experience At Wairakei Terraces, our pools draw their healing properties from silica terraces and geothermal water flow from 1.5 kilometres underground delivering an unbeatable combination of geothermal and mineral water. Immerse yourself in the mineral rich, hot thermal pools, at the bottom of silica terraces and instantly feel the silky smoothness on your skin and the warmth across your body. ​ Let the days worries drift away and be replaced with the luxurious embrace of natural heat.",
-    cost: "27USD per person (54USD for Fanny and Nate",
+    cost: "27USD per person (54USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/7.jpg",
   },
   {
@@ -75,7 +75,7 @@ export const giftsMapping = [
     name: "Bike and wine: Marlborough wine region",
     description:
       "Marlborough wine region is located in the north of the South Island of New Zealand. It's well known for its winemaking industry, and for the Marlborough Sounds, an extensive network of coastal waterways, peninsulas, and islands. Early settlers in Marlborough planted vines as early as the 1870s. One day bike rental for Fanny and Nate to bike from winery to wienry adn dsicover this beautiful region.  Based at the Vines Village there are over a dozen wineries, 3km of your starting point. Bike Hire includes a bike, helmet, a bike lock, map.",
-    cost: "35USD per person, 70usd for Fanny and Nate",
+    cost: "35USD per person (70usd for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/9.jpg",
   },
   {
@@ -139,7 +139,7 @@ export const giftsMapping = [
     name: "Queenstown skyline gondola and hike",
     description:
       "Take a scenic ride in the iconic Skyline Gondola and take in the stunning views as you ride the steepest cable car lift in the Southern Hemisphere! You’ll be carried 480 metres above Queenstown and Lake Wakatipu to the top of Bob's Peak, where you’ll enjoy a spectacular 220-degree panorama with breath-taking views of Coronet Peak, The Remarkables, Walter and Cecil Peak and, of course, Queenstown. When you get to the top, enjoy the spectacular views while having a drink from the Bar, take a few rides on the thrilling Luge (once is never enough), refuel with a sumptuous buffet lunch or dinner at Stratosfare Restaurant. There's more to enjoy!",
-    cost: "40 SUD per person and 80USD for Fanny and Nate",
+    cost: "40 USD per person (80USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/17.jpg",
   },
   {
@@ -147,7 +147,7 @@ export const giftsMapping = [
     name: "Quuenstown Skyline Luge",
     description:
       "At the top of queenstown, after taking the gonodla, there is the gravity-fuelled Skyline Luge, the global thrill ride.  Luge carts puts us in complete control as you take on over 1,600 metres of banked corners, tunnels and dippersall the way down to the city",
-    cost: "42 Usd per person and 84SUD for Fanny and Nate",
+    cost: "42 Usd per person  (84USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/18.jpg",
   },
   {

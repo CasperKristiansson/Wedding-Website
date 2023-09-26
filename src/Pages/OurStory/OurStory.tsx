@@ -159,7 +159,7 @@ const OurStory: React.FC = () => {
         </div>
         <div className={classes.rightColumn}>
           <div className={classes.loremText}>
-            Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in the Aegen Sea. Now we want to solidify our love Infront of our family and friends as we begin this new chapter of our lives together.
+            Nathaniel, from a rural town in Pennsylvania, and Fanny, from the city of Stockholm in Sweden. We started as two student at Embry-Riddle Aeronautical University in Florida, but a tinder date later, endless texts & phone calls over the Atlantic, and a summer of adventure, our story began. After five years, we decided to spend the rest of our lives together as the sun was setting on top of a volcano in Santorini. Now we want to solidify our love infront of our family and friends as we begin this new chapter of our lives together.
           </div>
         </div>
       </div>
@@ -181,6 +181,20 @@ const OurStory: React.FC = () => {
     <VerticalTimeline
       lineColor='#C1C69D'
     >
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
+        date="January 2018"
+        contentStyle={{ background: '#C1C69D', color: '#fff' }}
+        iconStyle={{ background: '#C1C69D' }}
+        icon={Icon(danceImage)}
+      >
+        <h3 className="vertical-timeline-element-title">Moved in together</h3>
+        <h4 className="vertical-timeline-element-subtitle">Daytona Beach, FL</h4>
+        <p>
+          Fanny moved in with Nathaniel in Laura's House at Tuscany Chase Drive in Daytona Beach. They both lived here until they graduated college. During this time they had Christopher Oliver, Nathan Wiley, and Shane Geis as roomates.
+        </p>
+      </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}

@@ -380,7 +380,7 @@ const Gifts: React.FC = () => {
             <ol className={classes.numberedList}>
               <li className={classes.listItem}>
                 Select one of the available gifts from the list
-                below. (Grayed out gifts are already taken)
+                below. (Grayed out gifts are already taken). The gifts can be purchased to Fanny or Nate, or both of them. You can also go together with other people and buy gifts jointly. Make sure to include every name of the people who is part of the gift in the confirmation email.
               </li>
               <li className={classes.listItem}>
                 After selecting a gift, you will get a popup
@@ -401,6 +401,9 @@ const Gifts: React.FC = () => {
                 marked as reserved and you will receive a
                 confirmation email. (This is a manual process,
                 so it might take up to 48 hours)
+              </li>
+              <li className={classes.listItem}>
+                Do not tell Fanny and Nathaniel what you have bought, as it will be a surprise the day after the wedding during the gift opening. Reach out to Casper or Laura with any questions.
               </li>
             </ol>
           </div>
