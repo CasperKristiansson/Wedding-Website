@@ -118,7 +118,7 @@ export const Navigation: React.FC<{}> = (): JSX.Element => {
         <NavLink to="/" className={classes.navLink}>
           Home
         </NavLink>
-        <NavLink to="/rsvp" className={classes.navLink}>
+        <NavLink to="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__sJqEqhURUlaUUxEQjhESkxLTkZZUzgySklCREJIRC4u" className={classes.navLink}>
           RSVP
         </NavLink>
         <NavLink to="/gifts" className={classes.navLink}>
