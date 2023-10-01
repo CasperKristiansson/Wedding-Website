@@ -4,7 +4,6 @@ import { Gallery } from "react-grid-gallery";
 import { images } from "./Images";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import danceImage from "../../assets/Icons/dance.png"
 import movingTruck from "../../assets/Icons/moving-truck.png"
 import dating from "../../assets/Icons/dating.png"
 import house from "../../assets/Icons/house.png"

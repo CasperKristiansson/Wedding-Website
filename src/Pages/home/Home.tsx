@@ -402,7 +402,7 @@ const Home: React.FC = () => {
       <div className={classes.rsvpContainer}>
         <h2 className={classes.rsvpHeading}>RSVP</h2>
         <p className={classes.rsvpDate}>by Feb 1st, 2024</p>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__sJqEqhURUlaUUxEQjhESkxLTkZZUzgySklCREJIRC4u" target="_blank" className={classes.rsvpLink}>RSVP Now</a>
+        <a rel="noreferrer" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__sJqEqhURUlaUUxEQjhESkxLTkZZUzgySklCREJIRC4u" target="_blank" className={classes.rsvpLink}>RSVP Now</a>
       </div>
       <div className={classes.containerOurStory}>
         <div className={classes.title}>Our Story</div>
