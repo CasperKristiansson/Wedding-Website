@@ -5,6 +5,10 @@ import { images } from "./Images";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import danceImage from "../../assets/Icons/dance.png"
+import movingTruck from "../../assets/Icons/moving-truck.png"
+import dating from "../../assets/Icons/dating.png"
+import house from "../../assets/Icons/house.png"
+import proposal from "../../assets/Icons/proposal.png"
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -184,24 +188,10 @@ const OurStory: React.FC = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
-        date="January 2018"
-        contentStyle={{ background: '#C1C69D', color: '#fff' }}
-        iconStyle={{ background: '#C1C69D' }}
-        icon={Icon(danceImage)}
-      >
-        <h3 className="vertical-timeline-element-title">Moved in together</h3>
-        <h4 className="vertical-timeline-element-subtitle">Daytona Beach, FL</h4>
-        <p>
-          Fanny moved in with Nathaniel in Laura's House at Tuscany Chase Drive in Daytona Beach. They both lived here until they graduated college. During this time they had Christopher Oliver, Nathan Wiley, and Shane Geis as roomates.
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
         date="May 2017"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
-        icon={Icon(danceImage)}
+        icon={Icon(dating)}
       >
         <h3 className="vertical-timeline-element-title">First Date</h3>
         <h4 className="vertical-timeline-element-subtitle">Daytona Beach, FL</h4>
@@ -212,10 +202,24 @@ const OurStory: React.FC = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
+        date="January 2018"
+        contentStyle={{ background: '#C1C69D', color: '#fff' }}
+        iconStyle={{ background: '#C1C69D' }}
+        icon={Icon(movingTruck)}
+      >
+        <h3 className="vertical-timeline-element-title">Moved in together</h3>
+        <h4 className="vertical-timeline-element-subtitle">Daytona Beach, FL</h4>
+        <p>
+          Fanny moved in with Nathaniel in Laura's House at Tuscany Chase Drive in Daytona Beach. They both lived here until they graduated college. During this time they had Christopher Oliver, Nathan Wiley, and Shane Geis as roomates.
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: '7px solid #C1C69D' }}
         date="August 2021"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
-        icon={Icon(danceImage)}
+        icon={Icon(house)}
       >
         <h3 className="vertical-timeline-element-title">First Place</h3>
         <h4 className="vertical-timeline-element-subtitle">Sanford, FL</h4>
@@ -229,7 +233,7 @@ const OurStory: React.FC = () => {
         date="July 2022"
         contentStyle={{ background: '#C1C69D', color: '#fff' }}
         iconStyle={{ background: '#C1C69D' }}
-        icon={Icon(danceImage)}
+        icon={Icon(proposal)}
       >
         <h3 className="vertical-timeline-element-title">The Proposal</h3>
         <h4 className="vertical-timeline-element-subtitle">Santorini, Greece</h4>
