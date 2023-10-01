@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
-
-import LoginPage from './Pages/Login/Login';
 import { Navigation } from './Pages/Navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
 import Invitation from './Pages/invitation/invitation';
