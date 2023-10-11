@@ -144,7 +144,7 @@ export const Navigation: React.FC<{}> = (): JSX.Element => {
         <NavLink to="/" className={classes.mobileNavLink}>
           Home
         </NavLink>
-        <NavLink to="/rsvp" className={classes.mobileNavLink}>
+        <NavLink to="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__sJqEqhURUlaUUxEQjhESkxLTkZZUzgySklCREJIRC4u" className={classes.mobileNavLink}>
           RSVP
         </NavLink>
         <NavLink to="/gifts" className={classes.mobileNavLink}>
