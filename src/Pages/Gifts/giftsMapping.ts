@@ -1,9 +1,17 @@
 export const giftsMapping = [
   {
+    id: 0,
+    name: "RV/Camper Van Rental Fund",
+    description:
+      "help contributie to our RV/campervan rental as We travel across the north and South island of New Zeeland.",
+    cost: "Open",
+    image: process.env.PUBLIC_URL + "assets/Gifts/0.jpg",
+  },
+  {
     id: 1,
     name: "Gas Money",
     description:
-      "Goal: 3710km (2306 miles) – partial contribution accepted (casper, can we show like a progress bar, kinda like a donation, if someone gives 100usd we can show that we have gas for 1000km our of 3710km etc. )",
+      "Goal: 3710km (2306 miles) – partial contribution accepted as well!",
     cost: "100kr/10USD = 40km (25 miles) 250kr/25USD = 105km (65 miles) 500kr/50 USD = 200km (125 miles)",
     image: process.env.PUBLIC_URL + "assets/Gifts/1.jpg",
   },
