@@ -338,6 +338,15 @@ const useStyles = createUseStyles({
   closeButton: {
     
   },
+  purchasedButton: {
+    backgroundColor: '#D3D3D3',
+    color: '#A9A9A9',
+    cursor: 'not-allowed',
+    "&:hover": {
+      backgroundColor: '#D3D3D3',
+      color: '#A9A9A9',
+    },
+  },
 });
 
 const Gifts: React.FC = () => {
@@ -469,42 +478,66 @@ const Gifts: React.FC = () => {
       </div>
       {giftsMapping.map((gift) => (
         <>
-        <div key={gift.id} className={classes.giftContainer}>
-          <div className={classes.leftColumnE}>
-            <img src={gift.image} alt={gift.name} className={classes.giftImage} />
-          </div>
-          <div className={classes.rightColumnE}>
-            <div className={classes.giftName}>
-              {gift.name}
+          <div key={gift.id} className={classes.giftContainer}>
+            <div className={classes.leftColumnE}>
+              <img src={gift.image} alt={gift.name} className={classes.giftImage} />
             </div>
-            <u className={classes.giftCost}>
-              Description:
-            </u>
-            <div className={classes.giftCost}>
-              {gift.description}
-            </div>
-            <u className={classes.giftCost}>
-              Cost:
-            </u>
-            <div className={classes.giftCost}>
-              {gift.cost}
-            </div>
-            <div className={classes.buttonContainer}>
-              <button
-                className={classes.button}
-                onClick={() => setPopupOpen({
-                  open: true,
-                  id: gift.id,
-                })}
+            <div className={classes.rightColumnE}>
+              {gift.purchased ? (
+                <div className={classes.giftName} style={{ color: "red" }}>
+                  {gift.name} (Reserved)
+                </div>
+              ) : (
+                <div className={classes.giftName}>
+                  {gift.name}
+                </div>
+              )  
+              }
+              <u className={classes.giftCost}
+                style={{ color: gift.purchased ? "red" : "black" }}
               >
-                Pay For Gift
-              </button>
+                Description:
+              </u>
+              <div className={classes.giftCost}
+                style={{ color: gift.purchased ? "red" : "black" }}
+              >
+                {gift.description}
+              </div>
+              <u className={classes.giftCost}
+                style={{ color: gift.purchased ? "red" : "black" }}
+              >
+                Cost:
+              </u>
+              <div className={classes.giftCost}
+                style={{ color: gift.purchased ? "red" : "black" }}
+              >
+                {gift.cost}
+              </div>
+              <div className={classes.buttonContainer}>
+                {gift.purchased ? (
+                  <button
+                    className={`${classes.button} ${classes.purchasedButton}`}
+                    disabled
+                  >
+                    Purchased
+                  </button>
+                ) : (
+                  <button
+                    className={classes.button}
+                    onClick={() => setPopupOpen({
+                      open: true,
+                      id: gift.id,
+                    })}
+                  >
+                    Pay For Gift
+                  </button>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-        <div className={classes.verticalLineContainer}>
-          <div className={classes.verticalLine} />
-        </div>
+          <div className={classes.verticalLineContainer}>
+            <div className={classes.verticalLine} />
+          </div>
         </>
       ))}
       {isPopupOpen.open && (
