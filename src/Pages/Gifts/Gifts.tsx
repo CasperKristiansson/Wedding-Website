@@ -393,8 +393,7 @@ const Gifts: React.FC = () => {
               </li>
               <li className={classes.listItem}>
                 After selecting a gift, you will get a popup
-                with the gift details. Click on the "Reserve"
-                button to reserve the gift.
+                with the gift details and payment instructions.
               </li>
               <li className={classes.listItem}>
                 You then have two payment options;
