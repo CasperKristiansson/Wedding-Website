@@ -95,7 +95,7 @@ export const giftsMapping = [
       "Marlborough wine region is located in the north of the South Island of New Zealand. It's well known for its winemaking industry, and for the Marlborough Sounds, an extensive network of coastal waterways, peninsulas, and islands. Early settlers in Marlborough planted vines as early as the 1870s. One day bike rental for Fanny and Nate to bike from winery to wienry adn dsicover this beautiful region.  Based at the Vines Village there are over a dozen wineries, 3km of your starting point. Bike Hire includes a bike, helmet, a bike lock, map.",
     cost: "35USD per person (70usd for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/9.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 10,
@@ -149,7 +149,7 @@ export const giftsMapping = [
       "Fanny has always dreamed about going bungee jumping. Nate will take all the pictures and videos of her doing it. Nevis bungee is a 134m bungee (the highest in New Zealand). It’s 8.5 seconds in a blitz of pure fear and adrenaline. ",
     cost: "170USD for Fanny",
     image: process.env.PUBLIC_URL + "assets/Gifts/15.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 16,
