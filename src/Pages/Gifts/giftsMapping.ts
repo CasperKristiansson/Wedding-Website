@@ -41,7 +41,7 @@ export const giftsMapping = [
     description: "We fly back to the States from Queenstown and want to spend our last night in a hotel before our flight departs.",
     cost: "120USD",
     image: process.env.PUBLIC_URL + "assets/Gifts/22.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ export const giftsMapping = [
       "Experience the adrenaline of white water rafting on Kaituna River! Raft the highest commercially rafted waterfall in the world! The Kaituna River is Rotorua Rafting’s playground, with an all-Kiwi crew and home to not just one, but three impressive waterfalls, including the highest rafted waterfall in the world – Tutea Falls at 7m, Okere Falls and Kaituna Falls. There is no denying that there is something amazing about this trip! The Kaituna river has been ranked as the best white water rafting in the world due to the kind nature of the river mixed with hair-raising waterfalls. It enables us to provide a tailored rafting tour to match your adrenalin needs, whether it’s rafting your grandma or a full-blown adrenalin junkie. We will give them the trip they desire.",
     cost: "60USD per person (120USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/5.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 6,
