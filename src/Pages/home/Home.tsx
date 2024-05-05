@@ -486,7 +486,7 @@ const Home: React.FC = () => {
             Before the wedding day there will be optional events open to whoever wants to join. After the wedding there will be coffee and small bites at Kristiansson’s for gift opening. Make sure to fill in the RSVP if interested in joining. 
             <br />
             <br />
-            Jonas Kristiansson is the toastmaster during the dinner. If you want to do a speech, or something else, reach out to him at jonas_kristiansson@yahoo.se, +46(0)703547935
+            Jonas Kristiansson is the toastmaster during the dinner. If you want to do a speech, or something else, reach out to him at jonas_kristiansson@yahoo.com, +46(0)703547935
             <br />
             <br />
             <u>Optional Events Before the Wedding</u>

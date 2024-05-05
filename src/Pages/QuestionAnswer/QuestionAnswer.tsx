@@ -21,7 +21,7 @@ const faqData = [
   { question: "How do I get around Stockholm?", answer: "The best way to get around Stockholm is by the excellent public transportation system; several bus lines, metro, commuter rails, trams and ferries cover the big city very efficiently. Biking is another popular option for getting around, as the city boasts numerous bike lanes and paths. A lot of places on the city are certainly walkable. Although we don't recommend driving, rental cars are available at the Stockholm Arlanda Airport (ARN) – about 30 miles north of the city. But it's easier to take the commuter rail or the Arlanda Express high-speed train into town instead. Taxis from the airport to the city center charged a fix fare of 500 kronor (about $52 to $58)."},
   { question: "Do I need to rent a car?", answer: "You do not need a car to get around Stockholm. The Public transit system is phenomenal and easy to use. Bus, subway, train, etc. No special transit pass needed, you tap your credit/Debit card when entering"},
   { question: "Do i need Swedishs cash?", answer: "No, We would Recommend that you do not take out cash, just use your Debit and credit card. Most places does not even accept cash."},
-  { question: "I want to have a speech, or do something special during the dinner, who do I talk to?", answer: "Fanny’s Dad, Jonas, is toast master. Reach out to him before the wedding and he can help arrange it. jonas_kristiansson@yahoo.se, +46(0)703547935"}
+  { question: "I want to have a speech, or do something special during the dinner, who do I talk to?", answer: "Fanny’s Dad, Jonas, is toast master. Reach out to him before the wedding and he can help arrange it. jonas_kristiansson@yahoo.com, +46(0)703547935"}
 ];
 
 const useStyles = createUseStyles({
