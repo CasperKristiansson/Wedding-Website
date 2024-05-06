@@ -50,7 +50,7 @@ export const giftsMapping = [
       "New Zealand’s maximum-adrenaline Black Water Rafting tour. we will  abseil to the depths of the earth, zip line through a glow worm studded cave, climb underground waterfalls and tube through fast-flowing waters.",
     cost: "150USD per person (300 for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/4.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 5,
