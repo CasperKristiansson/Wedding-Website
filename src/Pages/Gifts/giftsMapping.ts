@@ -77,7 +77,7 @@ export const giftsMapping = [
       "The regions only geothermal and silica bathing experience At Wairakei Terraces, our pools draw their healing properties from silica terraces and geothermal water flow from 1.5 kilometres underground delivering an unbeatable combination of geothermal and mineral water. Immerse yourself in the mineral rich, hot thermal pools, at the bottom of silica terraces and instantly feel the silky smoothness on your skin and the warmth across your body. ​ Let the days worries drift away and be replaced with the luxurious embrace of natural heat.",
     cost: "27USD per person (54USD for Fanny and Nate)",
     image: process.env.PUBLIC_URL + "assets/Gifts/7.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 8,
