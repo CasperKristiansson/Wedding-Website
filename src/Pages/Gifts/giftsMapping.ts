@@ -140,7 +140,7 @@ export const giftsMapping = [
       "Deep within Fiordland National Park lies Milford Sound, New Zealand’s most stunning natural attraction. With its magical combination of mountain peaks, ink-dark waters and superb dramatic forest-clad cliffs, it must be seen to be believed. Double the adventure with our Milford Sound Cruise & Kayak experience. This trip includes a Milford Sound cruise, a visit to the Milford Sound Underwater Observatory and up to 90 minutes of kayaking around sheltered Harrison Cove",
     cost: "170USD per person and 340USD for Fanny and Nate",
     image: process.env.PUBLIC_URL + "assets/Gifts/14.jpg",
-    purchased: false,
+    purchased: true,
   },
   {
     id: 15,
